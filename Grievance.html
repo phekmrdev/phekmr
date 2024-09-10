@@ -1,0 +1,846 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+   <title>PHE Kashmir</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"  content="PHE Kashmir, Constant monitoring of quality of drinking water supply for safe and sustainable water for all; Ensuring access to safe water and enable every citizen to monitor and maintain serveillance on his / her drinking water,Water is an elixir of life." />
+<meta name="keywords"  content="PHE Kashmir,Public Health Engineering Department,Jammu And Kashmir,Sindh, Liddar, Vishav, Rambiara, Doodhganga, Shaliganga, Pohru, Erin, Madhumati, Sukhnag, Aripal,Sandran, Bringi, Romshi, Ferozpore,wullar, Dal, Manasbal, Aanchar, Gangbal, Tarsar, Marsar, Gadsar , Satsar, Kokernag, Krishensar, Bramsar, Nigeen, Shesshnag, Vishensar, Dachigam,India,Jammu And Kashmir India,Water,Drinking Water" />
+ <meta property="og:title" content="Public Health Engineering Department in  Jammu And Kashmir India, Water is an elixir of life, Jammu and Kashmir" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Public Health Engineering Department, PHE Kashmir" />
+         <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+     <script src="js/jquery-1.10.2.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Vollkorn" rel="stylesheet" />
+     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/slicknav.css" rel="stylesheet" />
+    <link href="css/Styles.css" rel="stylesheet" />
+
+
+        <script type="text/javascript">
+
+
+            $(document).ready(function () {
+                $('#menu').slicknav();
+                $('#ImpNewPhotoThumNail .EvtHkmDlgUtv').click(function () {
+                    showNexPhoto("#" + this.id);
+
+                    function showNexPhoto(idA) {
+
+                        var htmSpnAL = "<span class=\"direcRev sourceSpnThimb\">" +
+                            "<a>" +
+                         $('#Div3UTUEIMGSlide').html("<div id=robackwardEvt class=\"RowEvtFrwdNewLft\"><span class=robackwards><i id=robackwardEvticon class=\"glyphicon glyphicon-chevron-left GalGalIconColorArrow\"></i></span></div>" +
+                            "<img class=img-responsive src=\"" + $(idA).attr("src") + "\" />" +
+                            "<div id=rofrewardEvt class=\"RowEvtFrwdNew\"><span class=rofrewards><i id=rofrewardEvticon class=\"iconClass glyphicon glyphicon-chevron-right GalGalIconColorArrow\"></i></span></div>");
+
+                        $('#rofrewardEvt,#robackwardEvt').hide()
+                        $('#Div3UTUEIMGSlide').mouseenter(function () {
+                            $('#rofrewardEvt,#robackwardEvt').show();
+                        });
+                        $('#Div3UTUEIMGSlide').mouseleave(function () {
+                            $('#rofrewardEvt,#robackwardEvt').hide();
+                        });
+
+                        var totl = $('#ImpNewPhotoThumNail .EvtHkmDlgUtv').length;
+                        var courntIndex = idA.split('EvtHkmDlgUtv')[1];
+
+                        $('#rofrewardEvt,#robackwardEvt').unbind('click');
+
+                        $('#robackwardEvt').click(function () {
+                            courntIndex--;
+                            courntIndex = courntIndex > 0 ? courntIndex : totl;
+                            showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                        });
+
+                        $('#rofrewardEvt').click(function () {
+                            courntIndex++;
+                            courntIndex = courntIndex > totl ? 1 : courntIndex;
+                            showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                        });
+
+                        $(document).unbind('keyup');
+
+                        $(document).keyup(function (event) {
+                            if (event.keyCode == 39 || event.keyCode == 40) {
+                                courntIndex++;
+                                courntIndex = courntIndex > totl ? 1 : courntIndex;
+                                showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                            }
+                            if (event.keyCode == 37 || event.keyCode == 38) {
+                                courntIndex--;
+                                courntIndex = courntIndex > 0 ? courntIndex : totl;
+                                showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                            }
+                        });
+
+                    }
+                });
+            });
+
+        </script>
+    <script>
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+</script>
+     <script src="js/owl.carousel.min.js"></script>
+    <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/owl.theme.default.css" rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: true
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false,
+                        margin: 10
+                    }
+                }
+            })
+
+
+
+            $('.pm-staff-profile-expander').click(function () {
+                $('.pm-staff-profile-expander').removeClass('fa-plus').addClass('fa-close');
+                $('.pm-staff-profile-quote').addClass('top');
+                $('.pm-staff-profile-expander').click(function () {
+                    $('.pm-staff-profile-expander').addClass('fa-plus').removeClass('fa-close');
+                    $('.pm-staff-profile-quote').removeClass('top');
+                });
+            });
+
+
+
+        })
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('.menu').addClass('top');
+            } else {
+                $('.menu').removeClass('top');
+            }
+        });
+          </script>
+
+
+</head>
+<body>
+    <form method="post" action="https://jalshaktiphekashmir.com/Grievance.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTgyMDM5NjE1Mg9kFgJmD2QWAgIBDxYCHgdlbmN0eXBlBRNtdWx0aXBhcnQvZm9ybS1kYXRhFgICBQ9kFgICAQ9kFgJmD2QWAgIJDxBkDxYBAgEWARAFyAFDaGllZiBFbmdpbmVlciAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAUDMTA1ZxYBZmQYAQUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRNdWx0aXZpZXcPD2RmZH3lH14N5pvmxeJSiY1h6+pC/F9LTAOZeWa40xN/gK6q" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResource6a61.html?d=W2yyCs9Qtj0FCoO6gS_BWZp7J53bPxwcSnRsDm_5j1j4wM-bP7mYrOyz9LCvMWUjMbW13gwvexmqCcq2c4xZiXnaiwM7aNPMqa1JSvhVeSQ1&amp;t=638562760700000000" type="text/javascript"></script>
+
+
+<script src="ScriptResourcec57b.html?d=GOD9K48RJ7eykbbD1xcc56DYP28ipMYA-_BsLhs9UL4jVHqBJyuQtO0xSAlApEwg-U9ivgGvVDH0bp5NmWW1XPDVUDBOdaLcDmPBz5MhLiKDIXHk972iAHt64wZppSxag3k-3xNDdH2pzxTf7ATnys1M7TjeyVPQzGq2uS6hNvs1&amp;t=620cade5" type="text/javascript"></script>
+<script src="ScriptResourcea94c.html?d=4i62qYSnR6nPGJpJ1UycYsUTEeHnxBtiExl3h-KaM4t0pt62xT8aoq0ZAeIpiV53l0IprbAThTtEgzj5nP-5bsVZRJSUBtjMHhL7i3KtCDIFSt99ckCWCpKQ_hBAzLDr48ygO-TaR0ykKn1McNg3ItnHfF7oaYRwjAyBBoxjlcjooD4ua_QIKXaim_wDGblC0&amp;t=7a0cc936" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="ScriptResource3b64.html?d=3FGm_U7C4hINOJwbk6lQhZBbF8jkJj0oLi8CBfypRG-i2rdwbebhJ4a-8wU708_1VUlacbE0l0rMeSE7qvTAdarS_jooHK-Sa5wIZZbUXZ14gcH2l_jLhQtJOk1TQmTVgRzVn5Y4q9gj13FVmSApZWIfWZFbqKku5iC_V1mdsMsPOd-xukbaYcbo3uxCgbN60&amp;t=7a0cc936" type="text/javascript"></script>
+<script src="ScriptResource57e5.html?d=y0wsJoOg_GbQza4EnNZP2XzYS0REO7ipqzpbf-_y5KyU33BCI_D0ebOoxCH8gp2i5QtKWB9wHivfqK9Kn3dI-7PXzDktB5iYf-fFKcDzDC8MF4kdekHEFThrUKoUncu6RjQ_0K553GffA88wv4c8jFdsDI0U70ixGeZyX1SQp4g1&amp;t=3128732" type="text/javascript"></script>
+<script src="ScriptResource8227.html?d=SMO-5F7B-mggKmVAkWsaco4qUhCSWot5m6jys29KQmoRTwDZSRXsoxP-S3vbpjW2btn0rLH7NcamUDmET8Yvu8N_5O0_Z2zvtrwdELn0RGp5WvQV4Qh67A0YZlKM-nYTxGDtN7cOITxMvu88JLt9RUbz20j7_94J2jN-0v1D3KA1&amp;t=3128732" type="text/javascript"></script>
+<script src="ScriptResource6e08.html?d=_uwkuu5WYhZVWXveQgzidxLukvF5BZZzy40TH-tgo5Cu6UihGF3bd2NM49-XP2nLtlozgZOknpG4SMbZQB9Kmt9EznsDaVSo0pld4c8gfrvSgxtHk9J8sntPKTDfYoYy0QhoIFzEC_kLAnD-As7LFMXomcjm-Dfi3CzY6awpyhMKtp8T9LxVu_nzzZDDBMqn0&amp;t=3128732" type="text/javascript"></script>
+<script src="WebResourcef6e8.html?d=-10JicCM2HMKWGks_UzG1eqy4eU3jt_BOmQq9-llD6mpVutTqx53hu7szV1eVqnMbAXt_SdBJNupZ3aUxO2Han7DPb8TY9GbNWA6KowmKJk1&amp;t=638562760700000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="FE03A35F" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAqOltGOiP5m0vyB3LnmHOyLlDNkF4yqjGS5XAiWDqUH4KbMwQZPefsG2c/7kiaYvf00pX9Zmhni7tqBwyRNawAoKE43atjEjTTS9b2Ud0DdgqowzxCfZqlPy7F63vb9oOyYAiAp6qqHRHn8x5yE7jbx2ZPQMBHFAxMwTDyxIoUYapb804gWEMORfaNghPfQRpdxYE2oGTnvJtOE5yowCizkjZDJHo6UQMZ97AFYVT2oWSTT480CIGgex4G+EGfIu48=" />
+</div>
+        <header id="this-is-top">
+      <style>
+         @media (max-width: 480px) { 
+            .imagess { 
+                 width: 291px;
+            } 
+        } 
+          
+        /* Media Query for low resolution  Tablets, Ipads */ 
+        @media (min-width: 481px) and (max-width: 767px) { 
+            .imagess { 
+                 width: 291px;
+            } 
+        } 
+    </style>
+        <div class="hundred">
+   
+          
+             <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-8">
+                <img src="images/jjm-kashmir-logo.png" class="imagess" />
+                 <img src="images/asokachakr.jpg" /><img src="images/jel.jpg"  /><img src="images/phejam.jpg" />
+            </div>
+            <div class="col-md-1">
+               
+            </div>
+            <div class="col-md-3">
+                <br />
+               <i class="fa fa-phone"></i> &nbsp;<b>HelpLine No.18001807027</b>
+            </div>
+                 </div>
+      
+        </div>
+          
+        <div class="clearfix"></div>
+        
+
+  </header>
+
+        <link href="css2/style.css" rel="stylesheet" />
+
+   
+           <nav class="qbootstrap-nav" role="navigation">
+
+                <div class="container">
+                    <div class="row">
+
+                        <style>
+                            .menu-1 ul li a {
+                                color: #ffff;
+                            }
+                        </style>
+                        <div class="col-xs-12 text-center">
+                            <div class="menu-1" style="background: linear-gradient(221deg,#c62052 0,#280071 100%);">
+                                <ul>
+                                    <li class="active"><a href="default.html" style="color: #fff">Home</a></li>
+                                    <li class="has-dropdown">
+                                        <a href="About.html">About Us</a>
+                                        <ul class="dropdown" style="margin-top:-10px;">
+                                            <li><a href="About.html" title="About Us">About Us</a></li>
+                                            <li><a href="Welcome.html" title="Welcome Message">Welcome Message</a></li>
+                                            <li><a href="Aim.html" title="Our Aim">Our Aim</a></li>
+                                            <li><a href="Goal.html" title="Our Goal">Our Goal</a></li>
+                                            <li><a href="Objective.html" title="Our Objective">Our Objective</a></li>
+                                            <li><a href="Vission.html" title="Our Vission">Our Vission</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+                                    <li><a href="organizationalchart.html">Organisational Chart</a></li>
+
+                                    <li class="has-dropdown">
+                                        <a href="#">RTI</a>
+
+                                        <ul class="dropdown">
+                                            <li><a href="all-rti.html" title="RTI-Acts">RTI-Acts</a></li>
+                                            <li><a href="RTINoteBook.html" title="RTI NoteBook">RTI NoteBook</a></li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li><a href="Programmes.html">Programmmes</a></li>
+
+
+
+
+
+
+                                    <li><a href="Water-Quality.html">Water Quality</a></li>
+
+                                    <li><a href="Contact.html" title="Contact US">Contact Us</a></li>
+                                   
+
+                                    
+
+
+                                    <li><a href="Allotments.html" title=" JJM Allotments">JJM Allotments</a></li>
+
+                                    
+                                    <li><a href="Login/Default.html" title="Login"> <input type="submit" name="ctl00$btnlogin" value="Login" id="btnlogin" class="btn btn-primary" /></a></li>
+
+                                   
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+      
+
+   
+        <div class="container" style=" min-height: 395px;     /*height: 100vh;*/">
+              <div class="col-md-12">
+              <h2>
+            
+
+
+        </h2>
+            
+    <style>
+        .CsDisp {
+            display:none;
+        }
+        .RedColor {
+            color:red;
+        }
+
+    </style>
+  
+                
+       <span id="ContentPlaceHolder1_label1" class="text-success" name="label1"></span><br />
+            <span id="ContentPlaceHolder1_Label2"></span>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$scptMngr', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div class="row">
+
+        <div class="col-md-4  form-group">
+            Select Officer:
+            <span id="ContentPlaceHolder1_rv1" style="visibility:hidden;">Select Officers</span>
+            <select name="ctl00$ContentPlaceHolder1$ddlOfficers" id="ContentPlaceHolder1_ddlOfficers" class="form-control">
+	<option selected="selected" value="0">Select </option>
+	<option value="105">Chief Engineer                                                                                                                                                                                          </option>
+
+</select>
+
+        </div>
+
+
+        <div class="col-md-4 form-group">
+            Name:
+            <span id="ContentPlaceHolder1_bbn" style="visibility:hidden;">Name</span>
+            <input name="ctl00$ContentPlaceHolder1$txt_Name" type="text" maxlength="20" id="ContentPlaceHolder1_txt_Name" class="form-control" />
+            
+        </div>
+         <div class="col-md-4  form-group">
+             Email:
+             
+<span id="ContentPlaceHolder1_RegularExpressionValidator3" style="visibility:hidden;">Wrong Email Id</span>
+             
+             <input name="ctl00$ContentPlaceHolder1$txt_Email" type="text" id="ContentPlaceHolder1_txt_Email" class="form-control" />
+             </div>
+        
+         
+    </div>
+        <div class="row">
+            <div class="col-md-4  form-group">
+             Mobile No:
+              <span id="ContentPlaceHolder1_RequiredFieldValidator1" style="visibility:hidden;">Mobile No</span>
+        <span id="ContentPlaceHolder1_RegularExpressiodator1" style="visibility:hidden;">wrong</span>      
+             
+              <input name="ctl00$ContentPlaceHolder1$txt_Mobile" type="text" maxlength="10" id="ContentPlaceHolder1_txt_Mobile" class="form-control" />
+            
+             </div>
+
+
+            <div class="col-md-8 form-group">
+                Address:
+           <span id="ContentPlaceHolder1_RequiredcvccFieldValidator2" style="visibility:hidden;">Address</span>
+               
+                   <span id="ContentPlaceHolder1_RegularExpressionValidator1" style="visibility:hidden;">No</span>
+                <textarea name="ctl00$ContentPlaceHolder1$txt_Address" rows="2" cols="20" id="ContentPlaceHolder1_txt_Address" class="form-control">
+</textarea>
+            </div>
+            <div class="col-md-12  form-group">
+                Message:
+                <span id="ContentPlaceHolder1_RequiredFieldVtor2" style="visibility:hidden;">Message</span>
+               
+                   <span id="ContentPlaceHolder1_RegularExpressidator5" style="visibility:hidden;">No Special Characters </span>
+                
+                 <textarea name="ctl00$ContentPlaceHolder1$txt_Message" rows="2" cols="20" id="ContentPlaceHolder1_txt_Message" class="form-control">
+</textarea>
+
+
+            </div>
+        </div>
+      <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <label class="text-bold">Photo&nbsp;
+                    <span id="ContentPlaceHolder1_RequiredFieldValidator9" style="visibility:hidden;">*</span>
+                    </label>
+                    &nbsp;<input type="file" name="ctl00$ContentPlaceHolder1$FileUpload1" id="ContentPlaceHolder1_FileUpload1" class="form-control" />
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <label class="text-bold">Upload Grievence&nbsp;
+                    <span id="ContentPlaceHolder1_RequiredFieldValidator6" style="visibility:hidden;">*</span>
+                    </label>
+                    &nbsp;<input type="file" name="ctl00$ContentPlaceHolder1$FileUpload2" id="ContentPlaceHolder1_FileUpload2" class="form-control" />
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-lg-12 form-group ">
+    <input type="submit" name="ctl00$ContentPlaceHolder1$btn_Submit" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btn_Submit&quot;, &quot;&quot;, true, &quot;w1&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder1_btn_Submit" class="btn btn-primary" />
+</div>
+        </div>
+
+         
+
+   
+
+         </div>
+
+        </div>
+           <div class="clearfix"></div>
+      <footer class="Hr">
+        <div class="col-md-12" style="background-image:url('images/footerimg.jpg');color:white;background-repeat: no-repeat; background-size: cover;padding:0px!important;">
+                <div class="col-md-4">
+                    <div class="dnntitle">
+                        <h3 class="titleline" style="color:white;"><span class="title1">Contact Us !</span></h3>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d211427.26926799395!2d74.6666703!3d34.106639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e19af3651273df%3A0x27b18b788814bd2!2sPublic+Health+Engineering+Department%2C+Srinagar+190012!5e0!3m2!1sen!2sin!4v1517206824075" width="100%" height="200" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                    <p>
+                        <p>
+                            JAL SHAKTI PHE KASHMIR<br />
+                            <h4 style="color:white;">(PUBLIC HEALTH ENGINEERING DEPARTMENT)</h4>
+                        </p>
+                        <span>UT OF JAMMU AND KASHMIR</span><br>
+                        District Srinagar,
+                 and Kashmir 190008.<br>
+                        Phone : 91-99000753.<br>
+                        Email: jkphekashmir@rediffmail.com
+                    </p>
+
+                </div>
+                <div class="col-md-4 sidebar" style="color:white;">
+                    <div class="dnntitle">
+                        <h3 class="titleline" style="color:white;"><span class="title1">Quick Links</span></h3>
+                    </div>
+                    <div class="row" style="color:white;">
+                        <div class="col-xs-6 col-sm-6" style="color:white;">
+                            <ul style="color:white;">
+                                <li><a href="AllTenders.html" title="Tenders" style="color:white;">Tenders</a></li>
+                                <li><a href="circulars-orders.html" title="Circulars" style="color:white;">Circulars</a></li>
+                                <li><a href="all-orders.html" title="Orders" style="color:white;">Orders</a></li>
+                                <li><a href="Default-2.html" title="Letter" style="color:white;">Letter</a></li>
+                                <li><a href="all-allotments.html" title="Allotments" style="color:white;">Allotments</a></li>
+                                <li><a href="Grievance.html" title="Grievance Cell" style="color:white;">Grievance Cell</a></li>
+                                <li><a href="http://kashmir.nic.in/" title="GAD" target="_blank" style="color:white;">GAD</a></li>
+                                <li><a href="http://jkpheirrigation.nic.in/" title="JKPHE/ I&FC.GOV.IN" target="_blank" style="color:white;">JKPHE/ I&FC.GOV.IN</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6">
+                            <ul style="color:white;">
+                                <li><a href="all-rti.html" title="RTI-Acts" style="color:white;">RTI-Acts</a></li>
+                                <li><a href="RTINoteBook.html" title="RTI NoteBook" style="color:white;">RTI NoteBook</a></li>
+                                <li><a href="Water-quality-2.html" title="Water Quality" style="color:white;">Water Quality</a></li>
+                                <li><a href="Aim.html" title="Our Aim" style="color:white;">Our Aim</a></li>
+                                <li><a href="Vission.html" title="Our Vission" style="color:white;">Our Vission</a></li>
+                                <li><a href="publicInformation.html" title="Public Info." style="color:white;">Public Info.</a></li>
+
+                                <li><a href="https://www.jktenders.gov.in/nicgep/app" title="JKTENDERS.GOV.IN" target="_blank" style="color:white;">JKTENDERS.GOV.IN</a></li>
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-4 no-padding">
+                    <div class="dnntitle">
+                        <h3 class="titleline" style="color:white;"><span class="title1">Our Gallery</span></h3>
+                    </div>
+                    <div id="ImpNewPhotoThumNail" class="col-xs-12" data-toggle="modal" data-target="#myModal">
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv1" src="BGallery/1.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv2" src="BGallery/2.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv3" src="BGallery/3.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv4" src="BGallery/4.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv5" src="BGallery/5.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv6" src="BGallery/6.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv7" src="BGallery/7.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv8" src="BGallery/8.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv9" src="BGallery/9.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        &nbsp;
+                    </div>
+                    <div style="margin-top: 30px; margin-left: 30px;">
+                        <a href="https://twitter.com/JalShaktiPHEkmr"><i class="fa fa-twitter-square" style="font-size: 40px;"></i></a>&nbsp;&nbsp;  <a href="https://www.facebook.com/people/Jal-Shakti-Phe-Kashmir/pfbid02ysVVXNshJo2zxcWQjZAABJUtVb5pnKckLPWim5buc4F4RCUSGWF3rMardwNdq5Nul/"><i class="fa fa-facebook-square" style="font-size: 40px;"></i></a>&nbsp;&nbsp;  <a href="#"><i class="fa fa-youtube-square" style="font-size: 40px;"></i></a>
+                    </div>
+                </div>
+
+            </div>
+    </footer>
+        <div class="container">
+
+
+
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+
+                <div class="modal-content">
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body" style=" background-color:#ffffff;">
+                        <div id="Div3UTUEIMGSlide"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-btm col-md-12" style="background: linear-gradient(221deg,#c62052 0,#280071 100%);">
+        <div class="container">
+        <p class="col-md-6">© Copyright 2017 | All Rights Reserved</p>
+        <p class="col-md-6">Designed | Developed | Maintained By :<a href="http://www.nationalitsolutions.com/" target="_blank">National IT Solutions</a></p>
+       </div>
+        <div class="clearfix"></div>
+    </div>
+        
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder1_rv1"), document.getElementById("ContentPlaceHolder1_bbn"), document.getElementById("ContentPlaceHolder1_RegularExpressionValidator3"), document.getElementById("ContentPlaceHolder1_RequiredFieldValidator1"), document.getElementById("ContentPlaceHolder1_RegularExpressiodator1"), document.getElementById("ContentPlaceHolder1_RequiredcvccFieldValidator2"), document.getElementById("ContentPlaceHolder1_RegularExpressionValidator1"), document.getElementById("ContentPlaceHolder1_RequiredFieldVtor2"), document.getElementById("ContentPlaceHolder1_RegularExpressidator5"), document.getElementById("ContentPlaceHolder1_RequiredFieldValidator9"), document.getElementById("ContentPlaceHolder1_RequiredFieldValidator6"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder1_rv1 = document.all ? document.all["ContentPlaceHolder1_rv1"] : document.getElementById("ContentPlaceHolder1_rv1");
+ContentPlaceHolder1_rv1.controltovalidate = "ContentPlaceHolder1_ddlOfficers";
+ContentPlaceHolder1_rv1.focusOnError = "t";
+ContentPlaceHolder1_rv1.errormessage = "Select Officers";
+ContentPlaceHolder1_rv1.validationGroup = "w1";
+ContentPlaceHolder1_rv1.type = "Integer";
+ContentPlaceHolder1_rv1.evaluationfunction = "RangeValidatorEvaluateIsValid";
+ContentPlaceHolder1_rv1.maximumvalue = "800";
+ContentPlaceHolder1_rv1.minimumvalue = "1";
+var ContentPlaceHolder1_bbn = document.all ? document.all["ContentPlaceHolder1_bbn"] : document.getElementById("ContentPlaceHolder1_bbn");
+ContentPlaceHolder1_bbn.controltovalidate = "ContentPlaceHolder1_txt_Name";
+ContentPlaceHolder1_bbn.focusOnError = "t";
+ContentPlaceHolder1_bbn.errormessage = "Name";
+ContentPlaceHolder1_bbn.validationGroup = "w1";
+ContentPlaceHolder1_bbn.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_bbn.initialvalue = "";
+var ContentPlaceHolder1_RegularExpressionValidator3 = document.all ? document.all["ContentPlaceHolder1_RegularExpressionValidator3"] : document.getElementById("ContentPlaceHolder1_RegularExpressionValidator3");
+ContentPlaceHolder1_RegularExpressionValidator3.controltovalidate = "ContentPlaceHolder1_txt_Email";
+ContentPlaceHolder1_RegularExpressionValidator3.focusOnError = "t";
+ContentPlaceHolder1_RegularExpressionValidator3.errormessage = "Wrong Email Id";
+ContentPlaceHolder1_RegularExpressionValidator3.validationGroup = "w1";
+ContentPlaceHolder1_RegularExpressionValidator3.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ContentPlaceHolder1_RegularExpressionValidator3.validationexpression = "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$";
+var ContentPlaceHolder1_RequiredFieldValidator1 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator1"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator1");
+ContentPlaceHolder1_RequiredFieldValidator1.controltovalidate = "ContentPlaceHolder1_txt_Mobile";
+ContentPlaceHolder1_RequiredFieldValidator1.focusOnError = "t";
+ContentPlaceHolder1_RequiredFieldValidator1.errormessage = "Mobile No";
+ContentPlaceHolder1_RequiredFieldValidator1.validationGroup = "w1";
+ContentPlaceHolder1_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_RequiredFieldValidator1.initialvalue = "";
+var ContentPlaceHolder1_RegularExpressiodator1 = document.all ? document.all["ContentPlaceHolder1_RegularExpressiodator1"] : document.getElementById("ContentPlaceHolder1_RegularExpressiodator1");
+ContentPlaceHolder1_RegularExpressiodator1.controltovalidate = "ContentPlaceHolder1_txt_Mobile";
+ContentPlaceHolder1_RegularExpressiodator1.errormessage = "wrong";
+ContentPlaceHolder1_RegularExpressiodator1.validationGroup = "w1";
+ContentPlaceHolder1_RegularExpressiodator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ContentPlaceHolder1_RegularExpressiodator1.validationexpression = "^[\\s\\S]{10,10}$";
+var ContentPlaceHolder1_RequiredcvccFieldValidator2 = document.all ? document.all["ContentPlaceHolder1_RequiredcvccFieldValidator2"] : document.getElementById("ContentPlaceHolder1_RequiredcvccFieldValidator2");
+ContentPlaceHolder1_RequiredcvccFieldValidator2.controltovalidate = "ContentPlaceHolder1_txt_Address";
+ContentPlaceHolder1_RequiredcvccFieldValidator2.focusOnError = "t";
+ContentPlaceHolder1_RequiredcvccFieldValidator2.errormessage = "Address";
+ContentPlaceHolder1_RequiredcvccFieldValidator2.validationGroup = "w1";
+ContentPlaceHolder1_RequiredcvccFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_RequiredcvccFieldValidator2.initialvalue = "";
+var ContentPlaceHolder1_RegularExpressionValidator1 = document.all ? document.all["ContentPlaceHolder1_RegularExpressionValidator1"] : document.getElementById("ContentPlaceHolder1_RegularExpressionValidator1");
+ContentPlaceHolder1_RegularExpressionValidator1.controltovalidate = "ContentPlaceHolder1_txt_Address";
+ContentPlaceHolder1_RegularExpressionValidator1.focusOnError = "t";
+ContentPlaceHolder1_RegularExpressionValidator1.errormessage = "No";
+ContentPlaceHolder1_RegularExpressionValidator1.validationGroup = "w1";
+ContentPlaceHolder1_RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ContentPlaceHolder1_RegularExpressionValidator1.validationexpression = "^[A-Za-z0-9_ \\n@&.]*$";
+var ContentPlaceHolder1_RequiredFieldVtor2 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldVtor2"] : document.getElementById("ContentPlaceHolder1_RequiredFieldVtor2");
+ContentPlaceHolder1_RequiredFieldVtor2.controltovalidate = "ContentPlaceHolder1_txt_Message";
+ContentPlaceHolder1_RequiredFieldVtor2.focusOnError = "t";
+ContentPlaceHolder1_RequiredFieldVtor2.errormessage = "Message";
+ContentPlaceHolder1_RequiredFieldVtor2.validationGroup = "w1";
+ContentPlaceHolder1_RequiredFieldVtor2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_RequiredFieldVtor2.initialvalue = "";
+var ContentPlaceHolder1_RegularExpressidator5 = document.all ? document.all["ContentPlaceHolder1_RegularExpressidator5"] : document.getElementById("ContentPlaceHolder1_RegularExpressidator5");
+ContentPlaceHolder1_RegularExpressidator5.controltovalidate = "ContentPlaceHolder1_txt_Message";
+ContentPlaceHolder1_RegularExpressidator5.focusOnError = "t";
+ContentPlaceHolder1_RegularExpressidator5.errormessage = "No Special Characters ";
+ContentPlaceHolder1_RegularExpressidator5.validationGroup = "w1";
+ContentPlaceHolder1_RegularExpressidator5.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ContentPlaceHolder1_RegularExpressidator5.validationexpression = "^[A-Za-z0-9_ \\n@&.]*$";
+var ContentPlaceHolder1_RequiredFieldValidator9 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator9"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator9");
+ContentPlaceHolder1_RequiredFieldValidator9.controltovalidate = "ContentPlaceHolder1_FileUpload1";
+ContentPlaceHolder1_RequiredFieldValidator9.focusOnError = "t";
+ContentPlaceHolder1_RequiredFieldValidator9.errormessage = "*";
+ContentPlaceHolder1_RequiredFieldValidator9.validationGroup = "aak";
+ContentPlaceHolder1_RequiredFieldValidator9.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_RequiredFieldValidator9.initialvalue = "";
+var ContentPlaceHolder1_RequiredFieldValidator6 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator6"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator6");
+ContentPlaceHolder1_RequiredFieldValidator6.controltovalidate = "ContentPlaceHolder1_FileUpload2";
+ContentPlaceHolder1_RequiredFieldValidator6.focusOnError = "t";
+ContentPlaceHolder1_RequiredFieldValidator6.errormessage = "*";
+ContentPlaceHolder1_RequiredFieldValidator6.validationGroup = "aak";
+ContentPlaceHolder1_RequiredFieldValidator6.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_RequiredFieldValidator6.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        WebForm_AutoFocus('ContentPlaceHolder1_ddlOfficers');
+document.getElementById('ContentPlaceHolder1_rv1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rv1'));
+}
+
+document.getElementById('ContentPlaceHolder1_bbn').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_bbn'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"ValidChars":"ASDFGHJKLPOIUYTREWQZXVCBNMasdfghjklpoiuytrewqzxcvbnm ","id":"ContentPlaceHolder1_niobvf"}, null, null, $get("ContentPlaceHolder1_txt_Name"));
+});
+
+document.getElementById('ContentPlaceHolder1_RegularExpressionValidator3').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_RegularExpressionValidator3'));
+}
+
+document.getElementById('ContentPlaceHolder1_RequiredFieldValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_RequiredFieldValidator1'));
+}
+
+document.getElementById('ContentPlaceHolder1_RegularExpressiodator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_RegularExpressiodator1'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"ValidChars":"1234567890","id":"ContentPlaceHolder1_bb"}, null, null, $get("ContentPlaceHolder1_txt_Mobile"));
+});
+
+document.getElementById('ContentPlaceHolder1_RequiredcvccFieldValidator2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_RequiredcvccFieldValidator2'));
+}
+
+document.getElementById('ContentPlaceHolder1_RegularExpressionValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_RegularExpressionValidator1'));
+}
+
+document.getElementById('ContentPlaceHolder1_RequiredFieldVtor2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_RequiredFieldVtor2'));
+}
+
+document.getElementById('ContentPlaceHolder1_RegularExpressidator5').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_RegularExpressidator5'));
+}
+
+document.getElementById('ContentPlaceHolder1_RequiredFieldValidator9').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_RequiredFieldValidator9'));
+}
+
+document.getElementById('ContentPlaceHolder1_RequiredFieldValidator6').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_RequiredFieldValidator6'));
+}
+//]]>
+</script>
+</form>
+
+</body>
+     <script type="text/javascript">
+
+         $(document).ready(function () {
+             $('#menu').slicknav();
+             var text = "";
+             var i;
+             for (i = 1; i < 10; i++) {
+                 text += "<div class=\"gal-item col-md-4 col-sm-4 col-xs-6\">" +
+                     "<img id=EvtHkmDlgUtv" + i + " src=\"BGallery/" + i + ".jpg\" class=\"img-responsive GaleryCssOuter EvtHkmDlgUtv\">" +
+                     "</div>";
+             }
+             // console.log(text);
+             document.getElementById("ImpNewPhotoThumNail").innerHTML = text;
+             // imageListEventSPlain();
+             $('#ImpNewPhotoThumNail .EvtHkmDlgUtv').click(function () {
+                 showNexPhoto("#" + this.id);
+
+                 function showNexPhoto(idA) {
+                     var showURLToDislay = $.trim($(idA).attr("FLD256"));
+                     var showURL = $.trim($(idA).attr("FLD256"));
+                     if (showURL.indexOf("http") < 0 && showURL.length > 5) {
+                         showURL = "http://" + showURL;
+                     }
+                     var fld788 = $.trim($(idA).attr("FLD788"));
+                     var clasNMEE = $.trim($(idA).attr("FLD677"));
+                     if (clasNMEE.length < 2 && fld788 == "1000") {
+                         clasNMEE = "globe";
+                     }
+
+                     var htmSpnAL = "<span class=\"direcRev sourceSpnThimb\">" +
+                         "<a>" +
+                         "<i class=\"fa fa-" + clasNMEE + "\"></i>" + showURLToDislay + "</a></span>";
+                     $('#Div3UTUEIMGSlide').html("<div id=robackwardEvt class=\"RowEvtFrwdNewLft\"><span class=robackwards><i id=robackwardEvticon class=\"glyphicon glyphicon-chevron-left GalIconColorArrow\"></i></span></div>" +
+                         "<img class=img-responsive src=\"" + $(idA).attr("src") + "\" />" +
+                         "<div id=rofrewardEvt class=\"RowEvtFrwdNew\"><span class=rofrewards><i id=rofrewardEvticon class=\"iconClass glyphicon glyphicon-chevron-right GalIconColorArrow\"></i></span></div>");
+
+                     $('#rofrewardEvt,#robackwardEvt').hide()
+                     $('#Div3UTUEIMGSlide').mouseenter(function () {
+                         $('#rofrewardEvt,#robackwardEvt').show();
+                     });
+                     $('#Div3UTUEIMGSlide').mouseleave(function () {
+                         $('#rofrewardEvt,#robackwardEvt').hide();
+                     });
+
+                     var totl = $('#ImpNewPhotoThumNail .EvtHkmDlgUtv').length;
+                     var courntIndex = idA.split('EvtHkmDlgUtv')[1];
+
+                     $('#rofrewardEvt,#robackwardEvt').unbind('click');
+
+                     $('#robackwardEvt').click(function () {
+                         courntIndex--;
+                         courntIndex = courntIndex > 0 ? courntIndex : totl;
+                         showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                     });
+
+                     $('#rofrewardEvt').click(function () {
+                         courntIndex++;
+                         courntIndex = courntIndex > totl ? 1 : courntIndex;
+                         showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                     });
+
+                     $(document).unbind('keyup');
+
+                     $(document).keyup(function (event) {
+                         if (event.keyCode == 39 || event.keyCode == 40) {
+                             courntIndex++;
+                             courntIndex = courntIndex > totl ? 1 : courntIndex;
+                             showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                         }
+                         if (event.keyCode == 37 || event.keyCode == 38) {
+                             courntIndex--;
+                             courntIndex = courntIndex > 0 ? courntIndex : totl;
+                             showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                         }
+                     });
+
+                 }
+             });
+         });
+
+       </script>
+</html>

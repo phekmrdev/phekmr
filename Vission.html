@@ -1,0 +1,541 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <title>PHE Kashmir</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"  content="PHE Kashmir, Constant monitoring of quality of drinking water supply for safe and sustainable water for all; Ensuring access to safe water and enable every citizen to monitor and maintain serveillance on his / her drinking water,Water is an elixir of life." />
+<meta name="keywords"  content="PHE Kashmir,Public Health Engineering Department,Jammu And Kashmir,Sindh, Liddar, Vishav, Rambiara, Doodhganga, Shaliganga, Pohru, Erin, Madhumati, Sukhnag, Aripal,Sandran, Bringi, Romshi, Ferozpore,wullar, Dal, Manasbal, Aanchar, Gangbal, Tarsar, Marsar, Gadsar , Satsar, Kokernag, Krishensar, Bramsar, Nigeen, Shesshnag, Vishensar, Dachigam,India,Jammu And Kashmir India,Water,Drinking Water" />
+ <meta property="og:title" content="Public Health Engineering Department in  Jammu And Kashmir India, Water is an elixir of life, Jammu and Kashmir" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Public Health Engineering Department, PHE Kashmir" />
+         <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+     <script src="js/jquery-1.10.2.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Vollkorn" rel="stylesheet" />
+     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/slicknav.css" rel="stylesheet" />
+    <link href="css/Styles.css" rel="stylesheet" />
+
+
+        <script type="text/javascript">
+
+
+            $(document).ready(function () {
+                $('#menu').slicknav();
+                $('#ImpNewPhotoThumNail .EvtHkmDlgUtv').click(function () {
+                    showNexPhoto("#" + this.id);
+
+                    function showNexPhoto(idA) {
+
+                        var htmSpnAL = "<span class=\"direcRev sourceSpnThimb\">" +
+                            "<a>" +
+                         $('#Div3UTUEIMGSlide').html("<div id=robackwardEvt class=\"RowEvtFrwdNewLft\"><span class=robackwards><i id=robackwardEvticon class=\"glyphicon glyphicon-chevron-left GalGalIconColorArrow\"></i></span></div>" +
+                            "<img class=img-responsive src=\"" + $(idA).attr("src") + "\" />" +
+                            "<div id=rofrewardEvt class=\"RowEvtFrwdNew\"><span class=rofrewards><i id=rofrewardEvticon class=\"iconClass glyphicon glyphicon-chevron-right GalGalIconColorArrow\"></i></span></div>");
+
+                        $('#rofrewardEvt,#robackwardEvt').hide()
+                        $('#Div3UTUEIMGSlide').mouseenter(function () {
+                            $('#rofrewardEvt,#robackwardEvt').show();
+                        });
+                        $('#Div3UTUEIMGSlide').mouseleave(function () {
+                            $('#rofrewardEvt,#robackwardEvt').hide();
+                        });
+
+                        var totl = $('#ImpNewPhotoThumNail .EvtHkmDlgUtv').length;
+                        var courntIndex = idA.split('EvtHkmDlgUtv')[1];
+
+                        $('#rofrewardEvt,#robackwardEvt').unbind('click');
+
+                        $('#robackwardEvt').click(function () {
+                            courntIndex--;
+                            courntIndex = courntIndex > 0 ? courntIndex : totl;
+                            showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                        });
+
+                        $('#rofrewardEvt').click(function () {
+                            courntIndex++;
+                            courntIndex = courntIndex > totl ? 1 : courntIndex;
+                            showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                        });
+
+                        $(document).unbind('keyup');
+
+                        $(document).keyup(function (event) {
+                            if (event.keyCode == 39 || event.keyCode == 40) {
+                                courntIndex++;
+                                courntIndex = courntIndex > totl ? 1 : courntIndex;
+                                showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                            }
+                            if (event.keyCode == 37 || event.keyCode == 38) {
+                                courntIndex--;
+                                courntIndex = courntIndex > 0 ? courntIndex : totl;
+                                showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                            }
+                        });
+
+                    }
+                });
+            });
+
+        </script>
+    <script>
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+</script>
+     <script src="js/owl.carousel.min.js"></script>
+    <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/owl.theme.default.css" rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: true
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false,
+                        margin: 10
+                    }
+                }
+            })
+
+
+
+            $('.pm-staff-profile-expander').click(function () {
+                $('.pm-staff-profile-expander').removeClass('fa-plus').addClass('fa-close');
+                $('.pm-staff-profile-quote').addClass('top');
+                $('.pm-staff-profile-expander').click(function () {
+                    $('.pm-staff-profile-expander').addClass('fa-plus').removeClass('fa-close');
+                    $('.pm-staff-profile-quote').removeClass('top');
+                });
+            });
+
+
+
+        })
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('.menu').addClass('top');
+            } else {
+                $('.menu').removeClass('top');
+            }
+        });
+          </script>
+
+
+</head>
+<body>
+    <form method="post" action="https://jalshaktiphekashmir.com/Vission.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTMzNTU2NDA2D2QWAmYPZBYCAgEPZBYEAgMPZBYCAgEPZBYCZg8PFgIeBFRleHQFDldlbGNvbWUgVG8gUGhlZGQCBQ9kFgICAQ9kFgJmDw8WAh8ABQ5XZWxjb21lIFRvIFBoZWRkZOLFmj+MKE4clZGKJZA7H45TQMK70SAv6zfoMO5CzZv1" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A2170552" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALE9yud7mzKjWb7NmeczjUKlDNkF4yqjGS5XAiWDqUH4N5XB/Uf97uioUR+kVt5bNALe0U8oeHSA67tb2LqTe4e" />
+</div>
+        <header id="this-is-top">
+      <style>
+         @media (max-width: 480px) { 
+            .imagess { 
+                 width: 291px;
+            } 
+        } 
+          
+        /* Media Query for low resolution  Tablets, Ipads */ 
+        @media (min-width: 481px) and (max-width: 767px) { 
+            .imagess { 
+                 width: 291px;
+            } 
+        } 
+    </style>
+        <div class="hundred">
+   
+          
+             <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-8">
+                <img src="images/jjm-kashmir-logo.png" class="imagess" />
+                 <img src="images/asokachakr.jpg" /><img src="images/jel.jpg"  /><img src="images/phejam.jpg" />
+            </div>
+            <div class="col-md-1">
+               
+            </div>
+            <div class="col-md-3">
+                <br />
+               <i class="fa fa-phone"></i> &nbsp;<b>HelpLine No.18001807027</b>
+            </div>
+                 </div>
+      
+        </div>
+          
+        <div class="clearfix"></div>
+        
+
+  </header>
+
+        <link href="css2/style.css" rel="stylesheet" />
+
+   
+           <nav class="qbootstrap-nav" role="navigation">
+
+                <div class="container">
+                    <div class="row">
+
+                        <style>
+                            .menu-1 ul li a {
+                                color: #ffff;
+                            }
+                        </style>
+                        <div class="col-xs-12 text-center">
+                            <div class="menu-1" style="background: linear-gradient(221deg,#c62052 0,#280071 100%);">
+                                <ul>
+                                    <li class="active"><a href="default.html" style="color: #fff">Home</a></li>
+                                    <li class="has-dropdown">
+                                        <a href="About.html">About Us</a>
+                                        <ul class="dropdown" style="margin-top:-10px;">
+                                            <li><a href="About.html" title="About Us">About Us</a></li>
+                                            <li><a href="Welcome.html" title="Welcome Message">Welcome Message</a></li>
+                                            <li><a href="Aim.html" title="Our Aim">Our Aim</a></li>
+                                            <li><a href="Goal.html" title="Our Goal">Our Goal</a></li>
+                                            <li><a href="Objective.html" title="Our Objective">Our Objective</a></li>
+                                            <li><a href="Vission.html" title="Our Vission">Our Vission</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+                                    <li><a href="organizationalchart.html">Organisational Chart</a></li>
+
+                                    <li class="has-dropdown">
+                                        <a href="#">RTI</a>
+
+                                        <ul class="dropdown">
+                                            <li><a href="all-rti.html" title="RTI-Acts">RTI-Acts</a></li>
+                                            <li><a href="RTINoteBook.html" title="RTI NoteBook">RTI NoteBook</a></li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li><a href="Programmes.html">Programmmes</a></li>
+
+
+
+
+
+
+                                    <li><a href="Water-Quality.html">Water Quality</a></li>
+
+                                    <li><a href="Contact.html" title="Contact US">Contact Us</a></li>
+                                   
+
+                                    
+
+
+                                    <li><a href="Allotments.html" title=" JJM Allotments">JJM Allotments</a></li>
+
+                                    
+                                    <li><a href="Login/Default.html" title="Login"> <input type="submit" name="ctl00$btnlogin" value="Login" id="btnlogin" class="btn btn-primary" /></a></li>
+
+                                   
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+      
+
+   
+        <div class="container" style=" min-height: 395px;     /*height: 100vh;*/">
+              <div class="col-md-12">
+              <h2>
+            
+     <span id="head_PageContent_Label1">Welcome To Phe</span>
+
+        </h2>
+            
+    <span id="ContentPlaceHolder1_PageDescDisplay_Label1">Welcome To Phe</span>
+
+         </div>
+
+        </div>
+           <div class="clearfix"></div>
+      <footer class="Hr">
+        <div class="col-md-12" style="background-image:url('images/footerimg.jpg');color:white;background-repeat: no-repeat; background-size: cover;padding:0px!important;">
+                <div class="col-md-4">
+                    <div class="dnntitle">
+                        <h3 class="titleline" style="color:white;"><span class="title1">Contact Us !</span></h3>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d211427.26926799395!2d74.6666703!3d34.106639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e19af3651273df%3A0x27b18b788814bd2!2sPublic+Health+Engineering+Department%2C+Srinagar+190012!5e0!3m2!1sen!2sin!4v1517206824075" width="100%" height="200" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                    <p>
+                        <p>
+                            JAL SHAKTI PHE KASHMIR<br />
+                            <h4 style="color:white;">(PUBLIC HEALTH ENGINEERING DEPARTMENT)</h4>
+                        </p>
+                        <span>UT OF JAMMU AND KASHMIR</span><br>
+                        District Srinagar,
+                 and Kashmir 190008.<br>
+                        Phone : 91-99000753.<br>
+                        Email: jkphekashmir@rediffmail.com
+                    </p>
+
+                </div>
+                <div class="col-md-4 sidebar" style="color:white;">
+                    <div class="dnntitle">
+                        <h3 class="titleline" style="color:white;"><span class="title1">Quick Links</span></h3>
+                    </div>
+                    <div class="row" style="color:white;">
+                        <div class="col-xs-6 col-sm-6" style="color:white;">
+                            <ul style="color:white;">
+                                <li><a href="AllTenders.html" title="Tenders" style="color:white;">Tenders</a></li>
+                                <li><a href="circulars-orders.html" title="Circulars" style="color:white;">Circulars</a></li>
+                                <li><a href="all-orders.html" title="Orders" style="color:white;">Orders</a></li>
+                                <li><a href="Default-2.html" title="Letter" style="color:white;">Letter</a></li>
+                                <li><a href="all-allotments.html" title="Allotments" style="color:white;">Allotments</a></li>
+                                <li><a href="Grievance.html" title="Grievance Cell" style="color:white;">Grievance Cell</a></li>
+                                <li><a href="http://kashmir.nic.in/" title="GAD" target="_blank" style="color:white;">GAD</a></li>
+                                <li><a href="http://jkpheirrigation.nic.in/" title="JKPHE/ I&FC.GOV.IN" target="_blank" style="color:white;">JKPHE/ I&FC.GOV.IN</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6">
+                            <ul style="color:white;">
+                                <li><a href="all-rti.html" title="RTI-Acts" style="color:white;">RTI-Acts</a></li>
+                                <li><a href="RTINoteBook.html" title="RTI NoteBook" style="color:white;">RTI NoteBook</a></li>
+                                <li><a href="Water-quality-2.html" title="Water Quality" style="color:white;">Water Quality</a></li>
+                                <li><a href="Aim.html" title="Our Aim" style="color:white;">Our Aim</a></li>
+                                <li><a href="Vission.html" title="Our Vission" style="color:white;">Our Vission</a></li>
+                                <li><a href="publicInformation.html" title="Public Info." style="color:white;">Public Info.</a></li>
+
+                                <li><a href="https://www.jktenders.gov.in/nicgep/app" title="JKTENDERS.GOV.IN" target="_blank" style="color:white;">JKTENDERS.GOV.IN</a></li>
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-4 no-padding">
+                    <div class="dnntitle">
+                        <h3 class="titleline" style="color:white;"><span class="title1">Our Gallery</span></h3>
+                    </div>
+                    <div id="ImpNewPhotoThumNail" class="col-xs-12" data-toggle="modal" data-target="#myModal">
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv1" src="BGallery/1.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv2" src="BGallery/2.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv3" src="BGallery/3.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv4" src="BGallery/4.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv5" src="BGallery/5.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv6" src="BGallery/6.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv7" src="BGallery/7.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv8" src="BGallery/8.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
+                            <img id="EvtHkmDlgUtv9" src="BGallery/9.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        &nbsp;
+                    </div>
+                    <div style="margin-top: 30px; margin-left: 30px;">
+                        <a href="https://twitter.com/JalShaktiPHEkmr"><i class="fa fa-twitter-square" style="font-size: 40px;"></i></a>&nbsp;&nbsp;  <a href="https://www.facebook.com/people/Jal-Shakti-Phe-Kashmir/pfbid02ysVVXNshJo2zxcWQjZAABJUtVb5pnKckLPWim5buc4F4RCUSGWF3rMardwNdq5Nul/"><i class="fa fa-facebook-square" style="font-size: 40px;"></i></a>&nbsp;&nbsp;  <a href="#"><i class="fa fa-youtube-square" style="font-size: 40px;"></i></a>
+                    </div>
+                </div>
+
+            </div>
+    </footer>
+        <div class="container">
+
+
+
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+
+                <div class="modal-content">
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body" style=" background-color:#ffffff;">
+                        <div id="Div3UTUEIMGSlide"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-btm col-md-12" style="background: linear-gradient(221deg,#c62052 0,#280071 100%);">
+        <div class="container">
+        <p class="col-md-6">© Copyright 2017 | All Rights Reserved</p>
+        <p class="col-md-6">Designed | Developed | Maintained By :<a href="http://www.nationalitsolutions.com/" target="_blank">National IT Solutions</a></p>
+       </div>
+        <div class="clearfix"></div>
+    </div>
+        </form>
+
+</body>
+     <script type="text/javascript">
+
+         $(document).ready(function () {
+             $('#menu').slicknav();
+             var text = "";
+             var i;
+             for (i = 1; i < 10; i++) {
+                 text += "<div class=\"gal-item col-md-4 col-sm-4 col-xs-6\">" +
+                     "<img id=EvtHkmDlgUtv" + i + " src=\"BGallery/" + i + ".jpg\" class=\"img-responsive GaleryCssOuter EvtHkmDlgUtv\">" +
+                     "</div>";
+             }
+             // console.log(text);
+             document.getElementById("ImpNewPhotoThumNail").innerHTML = text;
+             // imageListEventSPlain();
+             $('#ImpNewPhotoThumNail .EvtHkmDlgUtv').click(function () {
+                 showNexPhoto("#" + this.id);
+
+                 function showNexPhoto(idA) {
+                     var showURLToDislay = $.trim($(idA).attr("FLD256"));
+                     var showURL = $.trim($(idA).attr("FLD256"));
+                     if (showURL.indexOf("http") < 0 && showURL.length > 5) {
+                         showURL = "http://" + showURL;
+                     }
+                     var fld788 = $.trim($(idA).attr("FLD788"));
+                     var clasNMEE = $.trim($(idA).attr("FLD677"));
+                     if (clasNMEE.length < 2 && fld788 == "1000") {
+                         clasNMEE = "globe";
+                     }
+
+                     var htmSpnAL = "<span class=\"direcRev sourceSpnThimb\">" +
+                         "<a>" +
+                         "<i class=\"fa fa-" + clasNMEE + "\"></i>" + showURLToDislay + "</a></span>";
+                     $('#Div3UTUEIMGSlide').html("<div id=robackwardEvt class=\"RowEvtFrwdNewLft\"><span class=robackwards><i id=robackwardEvticon class=\"glyphicon glyphicon-chevron-left GalIconColorArrow\"></i></span></div>" +
+                         "<img class=img-responsive src=\"" + $(idA).attr("src") + "\" />" +
+                         "<div id=rofrewardEvt class=\"RowEvtFrwdNew\"><span class=rofrewards><i id=rofrewardEvticon class=\"iconClass glyphicon glyphicon-chevron-right GalIconColorArrow\"></i></span></div>");
+
+                     $('#rofrewardEvt,#robackwardEvt').hide()
+                     $('#Div3UTUEIMGSlide').mouseenter(function () {
+                         $('#rofrewardEvt,#robackwardEvt').show();
+                     });
+                     $('#Div3UTUEIMGSlide').mouseleave(function () {
+                         $('#rofrewardEvt,#robackwardEvt').hide();
+                     });
+
+                     var totl = $('#ImpNewPhotoThumNail .EvtHkmDlgUtv').length;
+                     var courntIndex = idA.split('EvtHkmDlgUtv')[1];
+
+                     $('#rofrewardEvt,#robackwardEvt').unbind('click');
+
+                     $('#robackwardEvt').click(function () {
+                         courntIndex--;
+                         courntIndex = courntIndex > 0 ? courntIndex : totl;
+                         showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                     });
+
+                     $('#rofrewardEvt').click(function () {
+                         courntIndex++;
+                         courntIndex = courntIndex > totl ? 1 : courntIndex;
+                         showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                     });
+
+                     $(document).unbind('keyup');
+
+                     $(document).keyup(function (event) {
+                         if (event.keyCode == 39 || event.keyCode == 40) {
+                             courntIndex++;
+                             courntIndex = courntIndex > totl ? 1 : courntIndex;
+                             showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                         }
+                         if (event.keyCode == 37 || event.keyCode == 38) {
+                             courntIndex--;
+                             courntIndex = courntIndex > 0 ? courntIndex : totl;
+                             showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
+                         }
+                     });
+
+                 }
+             });
+         });
+
+       </script>
+ 
+    
+</html>
