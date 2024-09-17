@@ -41,183 +41,6 @@
     <link href="css/animations.css" rel="stylesheet" />
     <script src="js/css3-animate-it.js"></script>
     <script src="js/Chart.js"></script>
- 
-    <script>
-
-        function imageListEventSPlain() {
-            $('.JustShowEventsImgListParent').each(function () {
-                // alert("#"+ this.id);
-                var pageSizeEvtImgList = 8, pageIndexLocEvtImgList = 1, pDiv = "#" + this.id + " ";
-                var sizeEVtImsg = 100;
-                $(pDiv + ".JustShowEventsImgList," + pDiv + ".RofrewardEvents," + pDiv + ".RobackwardEvents").mouseover(function () {
-                    $(pDiv + '.RofrewardEvents').addClass("AddColoHover");
-                    $(pDiv + '.RobackwardEvents').addClass("AddColoHover");
-                    $(pDiv + '.RrofrewardEvticon').addClass("ColorIconsCs");
-                    $(pDiv + '.RrobackwardEvticon').addClass("ColorIconsCs");
-                });
-                $(pDiv + ".JustShowEventsImgList," + pDiv + ".RofrewardEvents," + pDiv + ".RobackwardEvents").mouseout(function () {
-                    $(pDiv + '.RofrewardEvents').removeClass("AddColoHover");
-                    $(pDiv + '.RobackwardEvents').removeClass("AddColoHover");
-                    $(pDiv + '.RrofrewardEvticon').addClass("ColorIconsCs");
-                    $(pDiv + '.RrobackwardEvticon').addClass("ColorIconsCs");
-                });
-                //if (screen.width > 999) {
-                //    sizeEVtImsg = Math.ceil(parseInt($.trim($(pDiv + '#getEventImgListparamTerFrmDB').html())) / 100) * (100 / parseInt($.trim($(pDiv + '#getEventImgListparamTerFrmDB').html())));
-                //}
-                //else if (screen.width > 666) {
-                //    sizeEVtImsg = 50;
-                //}
-                sizeEVtImsg = 100;
-                $(pDiv + '.JustShowEventsImgList').css("width", (sizeEVtImsg - 0.50).toString() + "%");
-
-                if ($(pDiv + '.JustShowEventsImgList').length > pageSizeEvtImgList) {
-                    pageIndexLocEvtImgList = 1;
-                    createSliderPagerEvtImgList(pDiv);
-
-                    $(pDiv + '.RobackwardEvents').click(function (e) {
-                        pageIndexLocEvtImgList--;
-                        createSliderPagerEvtImgList(pDiv);
-                        $(pDiv + '.JustShowEventsImgList' + pageIndexLocEvtImgList.toString()).removeClass('slideInLeft animated').addClass('slideInLeft animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-                            $(this).removeClass('slideInLeft animated');
-                        });
-                    });
-                    $(pDiv + '.RofrewardEvents').click(function (e) {
-
-                        pageIndexLocEvtImgList++;
-                        createSliderPagerEvtImgList(pDiv);
-                        $('.JustShowEventsImgList' + ((pageIndexLocEvtImgList + parseInt($.trim($('#getEventImgListparamTerFrmDB').html())) - 1)).toString()).removeClass('slideInRight animated').addClass('slideInRight animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-                            $(this).removeClass('slideInRight animated');
-                        });
-                    });
-                }
-                else {
-                    $(pDiv + '.RobackwardEvents,' + pDiv + '.RofrewardEvents').hide();
-                    $(pDiv + '.JustShowEventsImgList').show();
-                }
-
-
-                function createSliderPagerEvtImgList(pId) {
-                    $(pId + '.JustShowEventsImgList').hide();
-
-                    pageSizeEvtImgList = 8;
-                    if (pageIndexLocEvtImgList > 1) {
-                        pageSizeEvtImgList = 8;
-                        $(pId + '.RobackwardEvents').show();
-                    }
-                    else {
-                        $(pId + '.RobackwardEvents').hide();
-                        $(pId + '.RofrewardEvents').show();
-                    }
-                    if (pageIndexLocEvtImgList > 1 && pageIndexLocEvtImgList > $(pId + '.JustShowEventsImgList').length - pageSizeEvtImgList - 1) {
-                        $(pId + '.RofrewardEvents').hide();
-                    }
-                    else {
-                        $(pId + '.RofrewardEvents').show();
-                    }
-                    var totaLoca = pageIndexLocEvtImgList + pageSizeEvtImgList;
-                    var stIndx = (totaLoca - pageSizeEvtImgList);
-
-                    if (pageIndexLocEvtImgList > 1) {
-                        for (lpLp = stIndx; lpLp < stIndx + Math.ceil(pageSizeEvtImgList); lpLp++) {
-
-                            $(pId + '.JustShowEventsImgList' + (lpLp).toString()).css('display', '-webkit-inline-box');
-                        }
-                    }
-                    else {
-                        for (var lp = 1; lp < totaLoca; lp++) {
-                            // console.log(lp);
-                            $(pId + '.JustShowEventsImgList' + lp.toString()).css('display', '-webkit-inline-box');
-                        }
-                    }
-                }
-            });
-        }
-        $(document).ready(function () {
-            try {
-                $('#menu').slicknav();
-                var text = "";
-                var i;
-                for (i = 1; i < 10; i++) {
-                    text += "<div class=\"gal-item col-md-4 col-sm-4 col-xs-6\">" +
-                        "<img id=EvtHkmDlgUtv" + i + " src=\"BGallery/" + i + ".jpg\" class=\"img-responsive GaleryCssOuter EvtHkmDlgUtv\">" +
-                        "</div>";
-                }
-                // console.log(text);
-                document.getElementById("ImpNewPhotoThumNail").innerHTML = text;
-                // imageListEventSPlain();
-                $('#ImpNewPhotoThumNail .EvtHkmDlgUtv').click(function () {
-                    showNexPhoto("#" + this.id);
-
-                    function showNexPhoto(idA) {
-                        var showURLToDislay = $.trim($(idA).attr("FLD256"));
-                        var showURL = $.trim($(idA).attr("FLD256"));
-                        if (showURL.indexOf("http") < 0 && showURL.length > 5) {
-                            showURL = "http://" + showURL;
-                        }
-                        var fld788 = $.trim($(idA).attr("FLD788"));
-                        var clasNMEE = $.trim($(idA).attr("FLD677"));
-                        if (clasNMEE.length < 2 && fld788 == "1000") {
-                            clasNMEE = "globe";
-                        }
-
-                        var htmSpnAL = "<span class=\"direcRev sourceSpnThimb\">" +
-                            "<a>" +
-                            "<i class=\"fa fa-" + clasNMEE + "\"></i>" + showURLToDislay + "</a></span>";
-                        $('#Div3UTUEIMGSlide').html("<div id=robackwardEvt class=\"RowEvtFrwdNewLft\"><span class=robackwards><i id=robackwardEvticon class=\"glyphicon glyphicon-chevron-left GalIconColorArrow\"></i></span></div>" +
-                            "<img class=img-responsive src=\"" + $(idA).attr("src") + "\" />" +
-                            "<div id=rofrewardEvt class=\"RowEvtFrwdNew\"><span class=rofrewards><i id=rofrewardEvticon class=\"iconClass glyphicon glyphicon-chevron-right GalIconColorArrow\"></i></span></div>");
-
-                        $('#rofrewardEvt,#robackwardEvt').hide()
-                        $('#Div3UTUEIMGSlide').mouseenter(function () {
-                            $('#rofrewardEvt,#robackwardEvt').show();
-                        });
-                        $('#Div3UTUEIMGSlide').mouseleave(function () {
-                            $('#rofrewardEvt,#robackwardEvt').hide();
-                        });
-
-                        var totl = $('#ImpNewPhotoThumNail .EvtHkmDlgUtv').length;
-                        var courntIndex = idA.split('EvtHkmDlgUtv')[1];
-
-                        $('#rofrewardEvt,#robackwardEvt').unbind('click');
-
-                        $('#robackwardEvt').click(function () {
-                            courntIndex--;
-                            courntIndex = courntIndex > 0 ? courntIndex : totl;
-                            showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
-                        });
-
-                        $('#rofrewardEvt').click(function () {
-                            courntIndex++;
-                            courntIndex = courntIndex > totl ? 1 : courntIndex;
-                            showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
-                        });
-
-                        $(document).unbind('keyup');
-
-                        $(document).keyup(function (event) {
-                            if (event.keyCode == 39 || event.keyCode == 40) {
-                                courntIndex++;
-                                courntIndex = courntIndex > totl ? 1 : courntIndex;
-                                showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
-                            }
-                            if (event.keyCode == 37 || event.keyCode == 38) {
-                                courntIndex--;
-                                courntIndex = courntIndex > 0 ? courntIndex : totl;
-                                showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
-                            }
-                        });
-
-                    }
-                });
-
-                $(".ClearDataOFModal").click(function () {
-                    $('#AllContent').html("");
-                });
-            }
-            catch (er) { }
-        });
-
-    </script>
 
 
     <style>
@@ -333,21 +156,9 @@
     <!-- Theme style  -->
     <link rel="stylesheet" href="css2/style.css">
 
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
 
 </head>
-<body style="background-color:#ece9d8">
-    <form method="post" action="https://jalshaktiphekashmir.in/" id="ctl00" is="form1">
-<div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUENTM4MQ9kFgJmD2QWAgIBD2QWCAIFD2QWAmYPDxYCHgRUZXh0BfoMPGRpdiBpZD0ibXlOZXdDYXJvdXNlbCIgY2xhc3M9ImNhcm91c2VsIHNsaWRlIiBkYXRhLXJpZGU9ImNhcm91c2VsIj4gPGRpdiBjbGFzcz0iY2Fyb3VzZWwtaW5uZXIiPjxkaXYgY2xhc3M9Iml0ZW0gYWN0aXZlIGltZy1yZXNwb25zaXZlICI+PGltZyBzcmM9U2xpZGVyR2FsbGVyeS8yMDA3My5qcGVnICBzdHlsZT0ib2JqZWN0LWZpdDpjb3Zlcjt3aWRyaDoxMDAlO2hlaWdodDo1MDBweDsiPjxoMz4mbmJzcDsmbmJzcDtXU1M8L2gzPiA8L2Rpdj48ZGl2IGNsYXNzPSJpdGVtICAiPjxpbWcgc3JjPVNsaWRlckdhbGxlcnkvMjAwNzIuanBlZyBjbGFzcz0iIGltZy1yZXNwb25zaXZlICIgIHN0eWxlPSJvYmplY3QtZml0OmNvdmVyO3dpZHRoOjEwMCU7aGVpZ2h0OjUwMHB4OyIgPjxoMz4mbmJzcDsmbmJzcDtXU1MgQW5hbnRuYWc8L2gzPiA8L2Rpdj48ZGl2IGNsYXNzPSJpdGVtICAiPjxpbWcgc3JjPVNsaWRlckdhbGxlcnkvMjAwNjguanBnIGNsYXNzPSIgaW1nLXJlc3BvbnNpdmUgIiAgc3R5bGU9Im9iamVjdC1maXQ6Y292ZXI7d2lkdGg6MTAwJTtoZWlnaHQ6NTAwcHg7IiA+PGgzPiZuYnNwOyZuYnNwO1dvcnRoeSBDaGllZiBFbmdpbmVlcjwvaDM+IDwvZGl2PjxkaXYgY2xhc3M9Iml0ZW0gICI+PGltZyBzcmM9U2xpZGVyR2FsbGVyeS8xMDA1NS5qcGcgY2xhc3M9IiBpbWctcmVzcG9uc2l2ZSAiICBzdHlsZT0ib2JqZWN0LWZpdDpjb3Zlcjt3aWR0aDoxMDAlO2hlaWdodDo1MDBweDsiID48aDM+Jm5ic3A7Jm5ic3A7Q2hpZWYgRW5naW5lZXIgSmFsIFNoYWt0aSBQSEUgS2FzaG1pcjwvaDM+IDwvZGl2PjxkaXYgY2xhc3M9Iml0ZW0gICI+PGltZyBzcmM9U2xpZGVyR2FsbGVyeS8xMDA0Ni5qcGcgY2xhc3M9IiBpbWctcmVzcG9uc2l2ZSAiICBzdHlsZT0ib2JqZWN0LWZpdDpjb3Zlcjt3aWR0aDoxMDAlO2hlaWdodDo1MDBweDsiID48aDM+Jm5ic3A7Jm5ic3A7MTwvaDM+IDwvZGl2PjxkaXYgY2xhc3M9Iml0ZW0gICI+PGltZyBzcmM9U2xpZGVyR2FsbGVyeS80NS5qcGcgY2xhc3M9IiBpbWctcmVzcG9uc2l2ZSAiICBzdHlsZT0ib2JqZWN0LWZpdDpjb3Zlcjt3aWR0aDoxMDAlO2hlaWdodDo1MDBweDsiID48aDM+Jm5ic3A7Jm5ic3A7MjAgTUdEIFdhdGVyIFRyZWF0bWVudCBQbGFudCAoUmFuZ2lsKTwvaDM+IDwvZGl2PjxkaXYgY2xhc3M9Iml0ZW0gICI+PGltZyBzcmM9U2xpZGVyR2FsbGVyeS8zNi5qcGcgY2xhc3M9IiBpbWctcmVzcG9uc2l2ZSAiICBzdHlsZT0ib2JqZWN0LWZpdDpjb3Zlcjt3aWR0aDoxMDAlO2hlaWdodDo1MDBweDsiID48aDM+Jm5ic3A7Jm5ic3A7VGFuZ25hcjwvaDM+IDwvZGl2PjxhIGNsYXNzPSJsZWZ0IGNhcm91c2VsLWNvbnRyb2wiIGhyZWY9IiNteU5ld0Nhcm91c2VsIiBkYXRhLXNsaWRlPSJwcmV2Ij48c3BhbiBjbGFzcz0iZ2x5cGhpY29uIGdseXBoaWNvbi1jaGV2cm9uLWxlZnQiPjwvc3Bhbj48c3BhbiBjbGFzcz0ic3Itb25seSI+UHJldmlvdXM8L3NwYW4+PC9hPjxhIGNsYXNzPSJyaWdodCBjYXJvdXNlbC1jb250cm9sIiBocmVmPSIjbXlOZXdDYXJvdXNlbCIgZGF0YS1zbGlkZT0ibmV4dCI+PHNwYW4gY2xhc3M9ImdseXBoaWNvbiBnbHlwaGljb24tY2hldnJvbi1yaWdodCI+PC9zcGFuPjxzcGFuIGNsYXNzPSJzci1vbmx5Ij5OZXh0PC9zcGFuPjwvYT48L2Rpdj48L2Rpdj5kZAIHD2QWAmYPDxYCHwAFpwEgPGxpPjxhIHRhcmdldD1fYmxhbmsgaHJlZj0nQ2lyY3VsYXJzLmFzcHg/Q2lyY3VsYXJJRD0yMDAzMyc7IiA+VmVyaWZpY2F0aW9uIG9mIGNoYXJhY3RlciBhbmQgQW50ZWNlZGVudHMgb2YgdGhlIGNhbmRpZGF0ZXMgc2VsZWN0ZWQgZm9yIHRoZSBwb3N0IG9mIERyYWZ0c21hbjwvYT48L2xpPmRkAgkPZBYCZg8PFgIfAAXtAiA8bGk+PGEgIHRhcmdldD1fYmxhbmsgaHJlZj0nT3JkZXJzLmFzcHg/T3JkZXJJZD0zMDAzNCc7Ij5Ob3RpY2UgSW52aXRpbmcgVGVuZGVycyBFbmdhZ2VtZW50IG9mIEhpcmluZyBvZiBWZWhpY2xlPC9hPjwvbGk+IDxsaT48YSAgdGFyZ2V0PV9ibGFuayBocmVmPSdPcmRlcnMuYXNweD9PcmRlcklkPTIwMDM1JzsiPkFwcG9pbnRtZW50IG9mIENhbmRpZGF0ZXMgZm9yIHRoZSBwb3N0IG9mIEp1bmlvciBFbmdpbmVlcnM8L2E+PC9saT4gPGxpPjxhICB0YXJnZXQ9X2JsYW5rIGhyZWY9J09yZGVycy5hc3B4P09yZGVySWQ9MjAwMzQnOyI+QXBwb2ludG1lbnQgb2YgQ2FuZGlkYXRlcyBmb3IgdGhlIHBvc3Qgb2YgRHJhZnRzbWFuPC9hPjwvbGk+ZGQCCw8PFgIfAAWpBVRoZSB3YXRlciBpcyBhbiBlc3NlbnRpYWwgY29tbW9kaXR5IGZvciBhbGwgdGhlIGxpdmluZyBjcmVhdHVyZXMuIFRoZSBpbnRlbmRlZCBwdXJwb3NlIG9mIEphbCBTaGFrdGkgKFBIRSkgRGVwYXJ0bWVudCBLYXNobWlyLCBpcyB0byBlbnN1cmUgZHJpbmtpbmcgd2F0ZXIgZmFjaWxpdHkgdG8gYWxsIHRoZSBoYWJpdGF0aW9ucywgUnVyYWwgYXMgd2VsbCBhcyBVcmJhbi4NClRoZSBzYWxpZW50IG9iamVjdGl2ZXMgYW5kIGZ1bmN0aW9ucyBvZiBKYWwgU2hha3RpIChQSEUpIERlcGFydG1lbnQsIEthc2htaXIgYXJlIGFzIHVuZGVyLg0KVG8gaW52ZXN0aWdhdGUsIHBsYW4gYW5kIGltcGxlbWVudCB3YXRlciBzdXBwbHkgc2NoZW1lcyB0byBleHRlbmQgZHJpbmtpbmcgd2F0ZXIgZmFjaWxpdHkgdG8gUnVyYWwgYW5kIFVyYmFuIHBvcHVsYXRpb24gaW5jbHVkaW5nIHNjaG9vbHMgYW5kIG90aGVyIGluc3RpdHV0aW9ucy4NCkJlc2lkZXMgdGhlIHF1YW50aXR5IG9mIHdhdGVyIGFzIHBlciB0aGUgTmF0aW9uYWwgbm9ybXMsIHRoZSBxdWFsaXR5IG9mIHRoZSB3YXRlciBpcyBhbHNvIGNsb3NlbHkgbW9uaXRvcmVkIGJ5IHdheSBvZiBlc3RhYmxpc2hpbmcgZHJpbmtpbmcgd2F0ZXIgcXVhbGl0eSB0ZXN0aW5nIGxhYnMgYXQgdGhlIGRpdmlzaW9uIGFzIHdlbGwgYXMgc3ViLWRpdmlzaW9uIGxldmVsLmRkZHpd4d7gQ/7pQAwROKlgNnvHofoYcDNDXLrjRVJKfBR0" />
-</div>
-
-<div class="aspNetHidden">
+<body style="background-color: whitesmoke">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
 	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAJv64HNgth+GvvtMX0PhlKalDNkF4yqjGS5XAiWDqUH4KQI9SQMI40P/6bL5budRUhvdZ3nC/zPOsBr+l7z76G/" />
@@ -393,17 +204,11 @@
  
  
  
- 
- 
- 
- 
- 
-
 
         
         <div class="qbootstrap-loader"></div>
 
-       <!-- <style>
+        <style>
             @media (max-width: 480px) {
                 .imagess {
                     width: 291px;
@@ -416,7 +221,7 @@
                     width: 291px;
                 }
             }
-        </style> -->
+        </style> 
         <div id="page">
             <div class="row">
                 <div class="col-md-1">
@@ -432,78 +237,73 @@
                     <i class="fa fa-phone"></i>&nbsp;<b>HelpLine No.18001807027</b>
                 </div>
 
-                <nav class="nav nav-pills nav-fill" role="navigation">
-
-                    
-                        <div class="row">
-
-                            <style>
-                                .menu-1 ul li a {
-                                    color: #ffff;
-                                }
-                            </style>
-                            <div class="col-xs-12 text-center">
-                                <div class="menu-1" style="background: linear-gradient(221deg,#c62052 0,#280071 100%);">
-                                    <ul>
-                                        <li class="active"><a href="default.html" style="color: #fff">Home</a></li>
-                                        <li class="has-dropdown-menu">
-                                            <a href="About.html">About Us</a>
-                                            <ul class="dropdown-menu" style="margin-top: -10px;">
-                                                <li><a href="About.html" title="About Us">About Us</a></li>
-                                                <li><a href="Welcome.html" title="Welcome Message">Welcome Message</a></li>
-                                                <li><a href="Aim.html" title="Our Aim">Our Aim</a></li>
-                                                <li><a href="Goal.html" title="Our Goal">Our Goal</a></li>
-                                                <li><a href="Objective.html" title="Our Objective">Our Objective</a></li>
-                                                <li><a href="Vission.html" title="Our Vission">Our Vission</a></li>
-
-                                            </ul>
-                                        </li>
-
-
-                                        <li><a href="organizationalchart.html">Organisational Chart</a></li>
-
-                                        <li class="has-dropdown-menu" style="z-index: 100;">
-                                            <a href="#">RTI</a>
-
-                                            <ul class="dropdown-menu" style="margin-top: -10px;">
-                                                <li><a href="all-rti.html" title="RTI-Acts">RTI-Acts</a></li>
-                                                <li><a href="RTINoteBook.html" title="RTI NoteBook">RTI NoteBook</a></li>
-                                            </ul>
-                                        </li>
-
-
-                                        <li><a href="Programmes.html">Programmmes</a></li>
-
-
-
-
-
-
-                                        <li><a href="Water-Quality.html">Water Quality</a></li>
-
-                                        <li><a href="Contact.html" title="Contact US">Contact Us</a></li>
-                                        
-
-                                        
-
-
-                                        <li><a href="Allotments.html" title=" JJM Allotments">JJM Allotments</a></li>
-
-                                        <li><a href="Login/Default.html" title="Login">
-                                            <input type="submit" name="ctl00$btnlogin" value="Login" id="btnlogin" class="btn btn-primary" />
-                                        </a></li>
-
-                                        
-                                    </ul>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                  
-
-                </nav> 
+  <nav class="nav nav-pills nav-fill" role="navigation">
+  
+  
+      <div class="row">
+  
+           <style>
+          .menu ul li a { 
+          color: #ffff; 
+           } 
+           </style>
+          <div class="col-xs-12 text-center">
+              <div class="menu" style="background: linear-gradient(221deg,#c62052 0,#280071 100%);">
+                  <ul>
+                      <li class="active"><a href="index.html" style="color: #fff">Home</a></li>
+                      <li class="has-dropdown-menu">
+                          <a href="About.html">About Us</a>
+                          <ul class="dropdown-menu" style="margin-top: -10px;">
+                              <li><a href="About.html" title="About Us">About Us</a></li>
+                              <li><a href="Welcome.html" title="Welcome Message">Welcome Message</a></li>
+                              <li><a href="Aim.html" title="Our Aim">Our Aim</a></li>
+                              <li><a href="Goal.html" title="Our Goal">Our Goal</a></li>
+                              <li><a href="Objective.html" title="Our Objective">Our Objective</a></li>
+                              <li><a href="Vission.html" title="Our Vission">Our Vission</a></li>
+  
+                          </ul>
+                      </li>
+  
+  
+                      <li><a href="organizationalchart.html">Organisational Chart</a></li>
+  
+                      <li class="has-dropdown-menu" style="z-index: 100;">
+                          <a href="#">RTI</a>
+  
+                          <ul class="dropdown-menu" style="margin-top: -10px;">
+                              <li><a href="all-rti.html" title="RTI-Acts">RTI-Acts</a></li>
+                              <li><a href="RTINoteBook.html" title="RTI NoteBook">RTI NoteBook</a></li>
+                          </ul>
+                      </li>
+  
+  
+                      <li><a href="Programmes.html">Programmmes</a></li>
+  
+  
+  
+  
+  
+  
+                      <li><a href="Water-Quality.html">Water Quality</a></li>
+  
+                      <li><a href="Contact.html" title="Contact US">Contact Us</a></li>
+  
+  
+  
+  
+  
+                      <li><a href="Allotments.html" title=" JJM Allotments">JJM Allotments</a></li>
+  
+                  </ul>
+  
+              </div>
+  
+          </div>
+      </div>
+  
+  
+  
+  </nav>
 
 
 
@@ -951,730 +751,17 @@ Besides the quantity of water as per the National norms, the quality of the wate
                     <div class="clearfix"></div>
                 </div>
 
-
-                <!-- jQuery -->
-                <script src="js/jquery.min.js"></script>
-                <!-- jQuery Easing -->
-                <script src="js/jquery.easing.1.3.js"></script>
-                <!-- Bootstrap -->
-                <script src="js/bootstrap.min.js"></script>
-                <!-- Waypoints -->
-                <script src="js/jquery.waypoints.min.js"></script>
-                <!-- Stellar Parallax -->
-                <script src="js/jquery.stellar.min.js"></script>
-                <!-- Carousel -->
-                <script src="js/owl.carousel.min.js"></script>
-                <!-- Flexslider -->
-                <script src="js/jquery.flexslider-min.js"></script>
-                <!-- countTo -->
-                <script src="js/jquery.countTo.js"></script>
-                <!-- Magnific Popup -->
-                <script src="js/jquery.magnific-popup.min.js"></script>
-                <script src="js/magnific-popup-options.js"></script>
-                <!-- Sticky Kit -->
-                <script src="js/sticky-kit.min.js"></script>
-                <!-- Main -->
-                <script src="js/main.js"></script>
-
-
                 <script src="../code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
                 <script src="js/sliderNew.html"></script>
                 <link href="css/slider2.html" rel="stylesheet" />
                 <link rel="stylesheet" href="../code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
 
 
-                <script>
-            $(window).load(function () {
-                ; (function ($, window, document, undefined) {
-                    'use strict';
-
-                    var Pizza = {
-                        version: '0.0.1',
-
-                        settings: {
-                            donut: false,
-                            donut_inner_ratio: 0.4,   // between 0 and 1
-                            percent_offset: 35,       // relative to radius
-                            stroke_color: '#333',
-                            stroke_width: 0,
-                            show_percent: true,       // show or hide the percentage on the chart.
-                            animation_speed: 500,
-                            animation_type: 'elastic' // options: backin, backout, bounce, easein,
-                            //          easeinout, easeout, linear
-                        },
-
-                        init: function (scope, options) {
-                            var self = this;
-                            this.scope = scope || document.body;
-
-                            var pies = $('[data-pie-id]', this.scope);
-
-                            $.extend(true, this.settings, options)
-
-                            if (pies.length > 0) {
-                                pies.each(function () {
-                                    return self.build($(this), options);
-                                });
-                            } else {
-                                this.build($(this.scope), options);
-                            }
-
-                            this.events();
-                        },
-
-                        events: function () {
-                            var self = this;
-
-                            $(window).off('.pizza').on('resize.pizza', self.throttle(function () {
-                                self.init();
-                            }, 100));
-
-                            $(this.scope).off('.pizza').on('mouseenter.pizaa mouseleave.pizza touchstart.pizza', '[data-pie-id] li', function (e) {
-                                var parent = $(this).parent(),
-                                    path = Snap($('#' + parent.data('pie-id') + ' path[data-id="s' + $(this).index() + '"]')[0]),
-                                    text = Snap($(path.node).parent()
-                                        .find('text[data-id="' + path.node.getAttribute('data-id') + '"]')[0]),
-                                    settings = $(this).parent().data('settings');
-
-                                if (/start/i.test(e.type)) {
-                                    $(path.node).siblings('path').each(function () {
-                                        if (this.nodeName) {
-                                            path.animate({
-                                                transform: 's1 1 ' + path.node.getAttribute('data-cx') + ' ' + path.node.getAttribute('data-cy')
-                                            }, settings.animation_speed, mina[settings.animation_type]);
-                                            Snap($(this).next()[0]).animate({
-                                                opacity: 0
-                                            }, settings.animation_speed);
-                                        }
-                                    });
-                                }
-
-                                if (/enter|start/i.test(e.type)) {
-                                    path.animate({
-                                        transform: 's1.05 1.05 ' + path.node.getAttribute('data-cx') + ' ' + path.node.getAttribute('data-cy')
-                                    }, settings.animation_speed, mina[settings.animation_type]);
-
-                                    if (settings.show_percent) {
-                                        text.animate({
-                                            opacity: 1
-                                        }, settings.animation_speed);
-                                    }
-                                } else {
-                                    path.animate({
-                                        transform: 's1 1 ' + path.node.getAttribute('data-cx') + ' ' + path.node.getAttribute('data-cy')
-                                    }, settings.animation_speed, mina[settings.animation_type]);
-                                    text.animate({
-                                        opacity: 0
-                                    }, settings.animation_speed);
-                                }
-                            });
-                        },
-
-                        build: function (legends, options) {
-                            var self = this;
-
-                            var legend = legends, graph;
-
-                            legend.data('settings', $.extend({}, self.settings, options, legend.data('options')));
-                            self.data(legend, options || {});
-
-                            return self.update_DOM(self.pie(legend));
-                        },
-
-                        data: function (legend, options) {
-                            var data = [],
-                                count = 0;
-
-                            $('li', legend).each(function () {
-                                var segment = $(this);
-
-                                if (options.data) {
-                                    data.push({
-                                        value: options.data[segment.index()],
-                                        color: segment.css('color'),
-                                        segment: segment
-                                    });
-                                } else {
-                                    data.push({
-                                        value: segment.data('value'),
-                                        color: segment.css('color'),
-                                        segment: segment
-                                    });
-                                }
-                            });
-
-                            return legend.data('graph-data', data);
-                        },
-
-                        update_DOM: function (parts) {
-                            var legend = parts[0],
-                                graph = parts[1];
-
-                            return $(this.identifier(legend)).html(graph);
-                        },
-
-                        pie: function (legend) {
-                            // pie chart concept from JavaScript the
-                            // Definitive Guide 6th edition by David Flanagan
-                            var settings = legend.data('settings'),
-                                svg = this.svg(legend, settings),
-                                data = legend.data('graph-data'),
-                                total = 0,
-                                angles = [],
-                                start_angle = 0,
-                                base = $(this.identifier(legend)).width() - 4;
-
-                            for (var i = 0; i < data.length; i++) {
-                                total += data[i].value;
-                            }
-
-                            for (var i = 0; i < data.length; i++) {
-                                angles[i] = data[i].value / total * Math.PI * 2;
-                            }
-
-                            for (var i = 0; i < data.length; i++) {
-                                var end_angle = start_angle + angles[i];
-                                var cx = (base / 2),
-                                    cy = (base / 2),
-                                    r = ((base / 2) * 0.85);
-
-                                if (!settings.donut) {
-                                    // Compute the two points where our wedge intersects the circle
-                                    // These formulas are chosen so that an angle of 0 is at 12 o'clock
-                                    // and positive angles increase clockwise
-                                    var x1 = cx + r * Math.sin(start_angle);
-                                    var y1 = cy - r * Math.cos(start_angle);
-                                    var x2 = cx + r * Math.sin(end_angle);
-                                    var y2 = cy - r * Math.cos(end_angle);
-
-                                    // This is a flag for angles larger than than a half circle
-                                    // It is required by the SVG arc drawing component
-                                    var big = 0;
-                                    if (end_angle - start_angle > Math.PI) big = 1;
-
-                                    // This string holds the path details
-                                    var d = "M" + cx + "," + cy +  // Start at circle center
-                                        " L" + x1 + "," + y1 +     // Draw line to (x1,y1)
-                                        " A" + r + "," + r +       // Draw an arc of radius r
-                                        " 0 " + big + " 1 " +      // Arc details...
-                                        x2 + "," + y2 +            // Arc goes to to (x2,y2)
-                                        " Z";                      // Close path back to (cx,cy)
-                                }
-
-                                var existing_path = $('path[data-id="s' + i + '"]', svg.node);
-
-                                if (existing_path.length > 0) {
-                                    var path = Snap(existing_path[0]);
-                                } else {
-                                    var path = svg.path();
-                                }
-
-                                var percent = (data[i].value / total) * 100.0;
-
-                                // thanks to Raphael.js
-                                var existing_text = $('text[data-id="s' + i + '"]', svg.node);
-
-                                if (existing_text.length > 0) {
-                                    var text = Snap(existing_text[0]);
-                                    text.attr({
-                                        x: cx + (r + settings.percent_offset) * Math.sin(start_angle + (angles[i] / 2)),
-                                        y: cy - (r + settings.percent_offset) * Math.cos(start_angle + (angles[i] / 2))
-                                    });
-                                } else {
-                                    var text = path.paper.text(cx + (r + settings.percent_offset) * Math.sin(start_angle + (angles[i] / 2)),
-                                        cy - (r + settings.percent_offset) * Math.cos(start_angle + (angles[i] / 2)), Math.ceil(percent) + '%');
-                                }
-
-                                var left_offset = text.getBBox().width / 2;
-
-                                text.attr({
-                                    x: text.attr('x') - left_offset,
-                                    opacity: 0
-                                });
-
-                                text.node.setAttribute('data-id', 's' + i);
-                                path.node.setAttribute('data-cx', cx);
-                                path.node.setAttribute('data-cy', cy);
-
-                                if (settings.donut) {
-                                    this.annular_sector(path.node, {
-                                        centerX: cx, centerY: cy,
-                                        startDegrees: start_angle, endDegrees: end_angle,
-                                        innerRadius: (r * settings.donut_inner_ratio), outerRadius: r
-                                    });
-                                } else {
-                                    path.attr({ d: d });
-                                }
-
-                                path.attr({
-                                    fill: data[i].color,
-                                    stroke: settings.stroke_color,
-                                    strokeWidth: settings.stroke_width
-                                });
-
-                                path.node.setAttribute('data-id', 's' + i);
-
-                                this.animate(path, cx, cy, settings);
-
-                                // The next wedge begins where this one ends
-                                start_angle = end_angle;
-                            }
-
-                            return [legend, svg.node];
-                        },
-
-                        animate: function (el, cx, cy, settings) {
-                            var self = this;
-
-                            el.hover(function (e) {
-                                var path = Snap(e.target),
-                                    text = Snap($(path.node).parent()
-                                        .find('text[data-id="' + path.node.getAttribute('data-id') + '"]')[0]);
-
-                                path.animate({
-                                    transform: 's1.05 1.05 ' + cx + ' ' + cy
-                                }, settings.animation_speed, mina[settings.animation_type]);
-
-                                text.touchend(function () {
-                                    path.animate({
-                                        transform: 's1.05 1.05 ' + cx + ' ' + cy
-                                    }, settings.animation_speed, mina[settings.animation_type]);
-                                });
-
-                                if (settings.show_percent) {
-                                    text.animate({
-                                        opacity: 1
-                                    }, settings.animation_speed);
-                                    text.touchend(function () {
-                                        text.animate({
-                                            opacity: 1
-                                        }, settings.animation_speed);
-                                    });
-                                }
-                            }, function (e) {
-                                var path = Snap(e.target),
-                                    text = Snap($(path.node).parent()
-                                        .find('text[data-id="' + path.node.getAttribute('data-id') + '"]')[0]);
-
-                                path.animate({
-                                    transform: 's1 1 ' + cx + ' ' + cy
-                                }, settings.animation_speed, mina[settings.animation_type]);
-
-                                text.animate({
-                                    opacity: 0
-                                }, settings.animation_speed);
-                            });
-                        },
-
-                        svg: function (legend, settings) {
-                            var container = $(this.identifier(legend)),
-                                svg = $('svg', container),
-                                width = container.width(),
-                                height = width / 4;
-
-                            if (svg.length > 0) {
-                                svg = Snap(svg[0]);
-                            } else {
-                                svg = Snap(width, height);
-                            }
-
-                            svg.node.setAttribute('width', width + settings.percent_offset);
-                            svg.node.setAttribute('height', height + settings.percent_offset);
-                            svg.node.setAttribute('viewBox', '-' + settings.percent_offset + ' -' + settings.percent_offset + ' ' +
-                                (width + (settings.percent_offset * 1.5)) + ' ' +
-                                (height + (settings.percent_offset * 1.5)));
-
-                            return svg;
-                        },
-
-                        // http://stackoverflow.com/questions/11479185/svg-donut-slice-as-path-element-annular-sector
-                        annular_sector: function (path, options) {
-                            var opts = optionsWithDefaults(options);
-
-                            var p = [ // points
-                                [opts.cx + opts.r2 * Math.sin(opts.startRadians),
-                                opts.cy - opts.r2 * Math.cos(opts.startRadians)],
-                                [opts.cx + opts.r2 * Math.sin(opts.closeRadians),
-                                opts.cy - opts.r2 * Math.cos(opts.closeRadians)],
-                                [opts.cx + opts.r1 * Math.sin(opts.closeRadians),
-                                opts.cy - opts.r1 * Math.cos(opts.closeRadians)],
-                                [opts.cx + opts.r1 * Math.sin(opts.startRadians),
-                                opts.cy - opts.r1 * Math.cos(opts.startRadians)],
-                            ];
-
-                            var angleDiff = opts.closeRadians - opts.startRadians;
-                            var largeArc = (angleDiff % (Math.PI * 2)) > Math.PI ? 1 : 0;
-                            var cmds = [];
-                            cmds.push("M" + p[0].join());                                // Move to P0
-                            cmds.push("A" + [opts.r2, opts.r2, 0, largeArc, 1, p[1]].join()); // Arc to  P1
-                            cmds.push("L" + p[2].join());                                // Line to P2
-                            cmds.push("A" + [opts.r1, opts.r1, 0, largeArc, 0, p[3]].join()); // Arc to  P3
-                            cmds.push("z");                                // Close path (Line to P0)
-                            path.setAttribute('d', cmds.join(' '));
-
-                            function optionsWithDefaults(o) {
-                                // Create a new object so that we don't mutate the original
-                                var o2 = {
-                                    cx: o.centerX || 0,
-                                    cy: o.centerY || 0,
-                                    startRadians: (o.startDegrees || 0),
-                                    closeRadians: (o.endDegrees || 0),
-                                };
-
-                                var t = o.thickness !== undefined ? o.thickness : 100;
-                                if (o.innerRadius !== undefined) o2.r1 = o.innerRadius;
-                                else if (o.outerRadius !== undefined) o2.r1 = o.outerRadius - t;
-                                else o2.r1 = 200 - t;
-                                if (o.outerRadius !== undefined) o2.r2 = o.outerRadius;
-                                else o2.r2 = o2.r1 + t;
-
-                                if (o2.r1 < 0) o2.r1 = 0;
-                                if (o2.r2 < 0) o2.r2 = 0;
-
-                                return o2;
-                            }
-                        },
-
-                        identifier: function (legend) {
-                            return '#' + legend.data('pie-id');
-                        },
-
-                        throttle: function (fun, delay) {
-                            var timer = null;
-                            return function () {
-                                var context = this, args = arguments;
-                                clearTimeout(timer);
-                                timer = setTimeout(function () {
-                                    fun.apply(context, args);
-                                }, delay);
-                            };
-                        }
-                    };
-
-                    window.Pizza = Pizza;
-
-                }($, this, this.document));
-
-            });
-                </script>
-                <script type="text/javascript">
-
-
-
-
-            $(document).ready(function () {
-
-
-                var strRetrieveMarque = "";
-                $.ajax({
-                    type: "POST",
-                    contentType: "application/json; charset=utf-8",
-                    datatype: "JSON",
-                    url: "/CMS/CodeBehind/SetRetriveData.asmx/RetrieveMarque",
-                    success: function (data) {
-                        var xmlDocDetails = jQuery.parseXML(data.d);
-                        $(xmlDocDetails).find('NewDataSet').each(function () {
-                            $(this).find('Table').each(function () {
-
-                                strRetrieveMarque += "<li id=limarque" + $.trim($(this).find('MarqueId').text()) + " class=\"Marq\">" + $.trim($(this).find('MarqueDesc').text()) + "</li>";
-                            });
-                        });
-
-                        $('#MarqueTxt').append(strRetrieveMarque);
-                    }
-                });
-
-                var strHonorablePanel = "";
-                $.ajax({
-                    type: "POST",
-                    contentType: "application/json; charset=utf-8",
-                    datatype: "JSON",
-                    url: "/CMS/CodeBehind/SetRetriveData.asmx/HonorablePanelData",
-                    success: function (data) {
-                        var xmlDocDetails = jQuery.parseXML(data.d);
-                        $(xmlDocDetails).find('NewDataSet').each(function () {
-                            $(this).find('Table').each(function () {
-                                strHonorablePanel += "<div class=\"col-md-4 col-sm-4 col-xs-12 min-img\" id=HPanel" + $.trim($(this).find('PanelId').text()) + ">" +
-                                    "<img src=" + $.trim($(this).find('Path').text()) + ">" +
-                                    "<div class=\"min-name\">" +
-                                    "<span>" + $.trim($(this).find('Name').text()) + "</span>" + $.trim($(this).find('Designation').text()) +
-                                    "</div>" +
-                                    "<a href=" + $.trim($(this).find('PathUrl').text()) + " class=\"pm-staff-profile-expander fa fa-plus\"></a>" +
-                                    "</div >";
-                            });
-                        });
-
-                        $('#hblePanel').append(strHonorablePanel);
-                    }
-                });
-
-
-                var strSlider = "";
-                $.ajax({
-                    type: "POST",
-                    contentType: "application/json; charset=utf-8",
-                    datatype: "JSON",
-                    url: "/CMS/CodeBehind/SetRetriveData.asmx/RetriveSliderToDisplay",
-                    success: function (data) {
-                        var xmlDocDetails = jQuery.parseXML(data.d);
-                        $(xmlDocDetails).find('NewDataSet').each(function () {
-                            $(this).find('Table').each(function () {
-
-                                if ($.trim($(this).find('SelectedVAlueDD').text()) == "Add Photos") {
-
-                                    //  BInfo++;
-                                    strSlider += "<div class=\"item\" id=Photo" + $.trim($(this).find('UrlId').text()) + ">" +
-                                        "<img src=" + $.trim($(this).find('Path').text()) + ">" +
-                                        "<div class=\"textenter slowest go SliderTxt\" data-animate-effect=\"fade-In\">" + /*animated  growIn*/
-                                        "<h1 class=\"HTagClass HTagClas\">" + $.trim($(this).find('EnterName').text()) + "</h1>" + /*lightSpeedIn*/
-                                        "</div>" +
-                                        "</div>";
-                                }
-                                if ($.trim($(this).find('SelectedVAlueDD').text()) == "Add Videos") {
-
-
-                                    strSlider += "<div class=\"item\" id=" + $.trim($(this).find('UrlId').text()) + ">" +
-
-                                        "<iframe class=\"embed-responsive-item iframVideo\" src= https://www.youtube.com/embed/" + $.trim($(this).find('Path').text()) + "?modestbranding=1&;showinfo=0&;autohide=1&;rel=0&;&fs=0></iframe>" +
-
-                                        "</div>";
-
-                                }
-
-                            });
-                        });
-
-                        $('#MySlider').append(strSlider);
-
-                        $("#Photo2").addClass("active");
-                        $("#Photo10 h1").hide();
-                    }
-                });
-
-                var strBI = "", strFPR = "", strFPV = "", strInfoWQMS = "";
-                $.ajax({
-                    type: "POST",
-                    contentType: "application/json; charset=utf-8",
-                    datatype: "JSON",
-                    url: "/CMS/CodeBehind/SetRetriveData.asmx/RetriveData",
-                    success: function (data) {
-                        //  console.log(data.d);
-                        var BInfo = 0; var FPRInfo = 0; var FPVInfo = 0; var FPVInfoWQMS = 0;
-                        var xmlDocDetails = jQuery.parseXML(data.d);
-                        $(xmlDocDetails).find('NewDataSet').each(function () {
-                            $(this).find('Table').each(function () {
-
-                                if ($.trim($(this).find('SelectedVAlueDD').text()) == "Basic Information") {
-
-                                    BInfo++;
-                                    strBI += "<div title=\"" + $.trim($(this).find('EnterName').text()) + "\" class=\"ChopLiChar JustShowEventsImgList JustShowEventsImgList" + BInfo.toString() + "\">" +
-                                        "<a href=" + $.trim($(this).find('TextUrl').text()) + " target=#>" +
-                                        "<li>" + $.trim($(this).find('EnterName').text()) + "</li>" +
-                                        "</a>" +
-                                        "</div>";
-                                }
-                                if ($.trim($(this).find('SelectedVAlueDD').text()) == "Financial Progress Reports") {
-                                    FPRInfo++;
-                                    strFPR += "<div title=\"" + $.trim($(this).find('EnterName').text()) + "\"  class=\"ChopLiChar JustShowEventsImgList JustShowEventsImgList" + FPRInfo.toString() + "\">" +
-                                        "<a href=" + $.trim($(this).find('TextUrl').text()) + " target=#>" +
-                                        "<li>" + $.trim($(this).find('EnterName').text()) + "</li>" +
-                                        "</a>" +
-                                        "</div>";
-
-                                }
-                                if ($.trim($(this).find('SelectedVAlueDD').text()) == "Physical Progress Reports") {
-                                    FPVInfo++;
-                                    strFPV += "<div title=\"" + $.trim($(this).find('EnterName').text()) + "\"  class=\"ChopLiChar JustShowEventsImgList JustShowEventsImgList" + FPVInfo.toString() + "\">" +
-                                        "<a href=" + $.trim($(this).find('TextUrl').text()) + " target=#>" +
-                                        "<li>" + $.trim($(this).find('EnterName').text()) + "</li>" +
-                                        "</a>" +
-                                        "</div>";
-
-                                }
-                                if ($.trim($(this).find('SelectedVAlueDD').text()) == "Water QM & Surveillance") {
-                                    FPVInfoWQMS++;
-                                    strInfoWQMS += "<div title=\"" + $.trim($(this).find('EnterName').text()) + "\"  class=\"ChopLiChar JustShowEventsImgList JustShowEventsImgList" + FPVInfoWQMS.toString() + "\">" +
-                                        "<a href=" + $.trim($(this).find('TextUrl').text()) + " target=#>" +
-                                        "<li>" + $.trim($(this).find('EnterName').text()) + "</li>" +
-                                        "</a>" +
-                                        "</div>";
-
-                                }
-                            });
-
-                        });
-
-                        $('#JustShowEventsImgListParent1').prepend(strBI);
-                        $('#JustShowEventsImgListParent2').prepend(strFPR);
-                        $('#JustShowEventsImgListParent3').prepend(strFPV);
-                        $('#JustShowEventsImgListParent6').prepend(strInfoWQMS);
-
-                        imageListEventSPlain();
-                    }
-                });
-
-                var strRetrieveAllCircular = "";
-                $.ajax({
-                    type: "POST",
-                    contentType: "application/json; charset=utf-8",
-                    datatype: "JSON",
-                    url: "/CMS/CodeBehind/SetRetriveData.asmx/RetrieveTotalCountOfCircular",
-                    success: function (data) {
-                        var xmlDocDetails = jQuery.parseXML(data.d);
-
-                        $(xmlDocDetails).find('NewDataSet').each(function () {
-                            $(this).find('Table').each(function () {
-                                //   strRetrieveAllCircular = "<div  class=\"col-xs-12 NoOfCount MainModalData\"   data-toggle=modal data-target=#myReceiptsModal><span class=\"SpanNoOfCount\">Receipts from each district</span>(<span class=\"countColor\" data-id=\"" + $.trim($(this).find('totalcount').text()) + "\">" + $.trim($(this).find('totalcount').text()) + "</span>)</div>";
-
-                                strRetrieveAllCircular = $.trim($(this).find('totalcount').text());
-                            });
-                        });
-
-                        $('#AllCirculars').html(strRetrieveAllCircular);
-                    }
-                });
-
-
-
-                var strRetrieveAllOrders = "";
-                $.ajax({
-                    type: "POST",
-                    contentType: "application/json; charset=utf-8",
-                    datatype: "JSON",
-                    url: "/CMS/CodeBehind/SetRetriveData.asmx/RetrieveTotalCountOfOrders",
-                    success: function (data) {
-                        var xmlDocDetails = jQuery.parseXML(data.d);
-                        $(xmlDocDetails).find('NewDataSet').each(function () {
-                            $(this).find('Table').each(function () {
-                                //  alert(data.d);
-                                strRetrieveAllOrders = $.trim($(this).find('totalcount').text());
-                            });
-                        });
-
-                        $('#TotalOrders').html(strRetrieveAllOrders);
-                    }
-                });
-
-                var strRetrieveAllNotification = "";
-                $.ajax({
-                    type: "POST",
-                    contentType: "application/json; charset=utf-8",
-                    datatype: "JSON",
-                    url: "/CMS/CodeBehind/SetRetriveData.asmx/RetrieveTotalCountOfNotification",
-                    success: function (data) {
-                        var xmlDocDetails = jQuery.parseXML(data.d);
-                        $(xmlDocDetails).find('NewDataSet').each(function () {
-                            $(this).find('Table').each(function () {
-                                //  alert(data.d);
-                                strRetrieveAllNotification = $.trim($(this).find('totalcount').text());
-                            });
-                        });
-
-                        $('#TotalNotifications').html(strRetrieveAllNotification);
-                    }
-                });
-
-                var strRetrieveAllLetters = "";
-                $.ajax({
-                    type: "POST",
-                    contentType: "application/json; charset=utf-8",
-                    datatype: "JSON",
-                    url: "/CMS/CodeBehind/SetRetriveData.asmx/RetrieveTotalCountOfLetters",
-                    success: function (data) {
-                        var xmlDocDetails = jQuery.parseXML(data.d);
-                        $(xmlDocDetails).find('NewDataSet').each(function () {
-                            $(this).find('Table').each(function () {
-                                //  alert(data.d);
-                                strRetrieveAllLetters = $.trim($(this).find('totalcount').text());
-                            });
-                        });
-
-                        $('#TotalLetters').html(strRetrieveAllLetters);
-                    }
-                });
-
-                var strRetrieveAllNITenders = "";
-                $.ajax({
-                    type: "POST",
-                    contentType: "application/json; charset=utf-8",
-                    datatype: "JSON",
-                    url: "/CMS/CodeBehind/SetRetriveData.asmx/RetrieveTotalCountOfNITenders",
-                    success: function (data) {
-                        var xmlDocDetails = jQuery.parseXML(data.d);
-                        $(xmlDocDetails).find('NewDataSet').each(function () {
-                            $(this).find('Table').each(function () {
-                                //  alert(data.d);
-                                strRetrieveAllNITenders = $.trim($(this).find('totalcount').text());
-                            });
-                        });
-
-                        $('#TotalTenders').html(strRetrieveAllNITenders);
-                    }
-                });
-                var strRetrieveAllAllotments = "";
-                $.ajax({
-                    type: "POST",
-                    contentType: "application/json; charset=utf-8",
-                    datatype: "JSON",
-                    url: "/CMS/CodeBehind/SetRetriveData.asmx/RetrieveTotalCountOfAllotments",
-                    success: function (data) {
-                        var xmlDocDetails = jQuery.parseXML(data.d);
-                        $(xmlDocDetails).find('NewDataSet').each(function () {
-                            $(this).find('Table').each(function () {
-                                //  alert(data.d);
-                                strRetrieveAllAllotments = $.trim($(this).find('totalcount').text());
-                            });
-                        });
-
-                        $('#TotalAllotments').html(strRetrieveAllAllotments);
-                    }
-                });
-                var strRetrieveAllMpr = "";
-                $.ajax({
-                    type: "POST",
-                    contentType: "application/json; charset=utf-8",
-                    datatype: "JSON",
-                    url: "/CMS/CodeBehind/SetRetriveData.asmx/RetrieveTotalCountOfAddMpr",
-                    success: function (data) {
-                        var xmlDocDetails = jQuery.parseXML(data.d);
-                        $(xmlDocDetails).find('NewDataSet').each(function () {
-                            $(this).find('Table').each(function () {
-                                //  alert(data.d);
-                                strRetrieveAllMpr = $.trim($(this).find('totalcount').text());
-                            });
-                        });
-
-                        $('#TotalMPR').html(strRetrieveAllMpr);
-                    }
-                });
-                var strRetrieveAllQpr = "";
-                $.ajax({
-                    type: "POST",
-                    contentType: "application/json; charset=utf-8",
-                    datatype: "JSON",
-                    url: "/CMS/CodeBehind/SetRetriveData.asmx/RetrieveTotalCountOfAddQpr",
-                    success: function (data) {
-                        var xmlDocDetails = jQuery.parseXML(data.d);
-                        $(xmlDocDetails).find('NewDataSet').each(function () {
-                            $(this).find('Table').each(function () {
-                                //  alert(data.d);
-                                strRetrieveAllQpr = $.trim($(this).find('totalcount').text());
-                            });
-                        });
-
-                        $('#TotalQPR').html(strRetrieveAllQpr);
-                    }
-                });
-
-            });
-
-                </script>
+                
 
 
             </div>
         </div>
     </form>
 </body>
-
-
 </html>
