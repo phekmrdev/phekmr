@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 
 <html class="no-js">
@@ -13,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PHE | Kashmir</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+
     <!--
       //////////////////////////////////////////////////////
 
@@ -24,7 +21,15 @@
       Email: 			NA
       //////////////////////////////////////////////////////
        -->
-   
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <link href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -136,7 +141,8 @@
         }
     </style>
 
-    <link href="font-awesome/4.7.0/css/font-awesome.min.html" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="font-awesome/4.7.0/css/font-awesome.min.html" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="css6079.html?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="css-1d644.html?family=Montserrat:300,400,700" rel="stylesheet">
 
@@ -158,157 +164,82 @@
 
 
 </head>
+
 <body style="background-color: whitesmoke">
 
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAJv64HNgth+GvvtMX0PhlKalDNkF4yqjGS5XAiWDqUH4KQI9SQMI40P/6bL5budRUhvdZ3nC/zPOsBr+l7z76G/" />
-</div>
-        
-        
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+        value="/wEdAAJv64HNgth+GvvtMX0PhlKalDNkF4yqjGS5XAiWDqUH4KQI9SQMI40P/6bL5budRUhvdZ3nC/zPOsBr+l7z76G/" />
+    </div>
 
-<style>
-    /* Add your CSS here */
-    #maintenance-notification {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      background-color: #ffcc00;
-      color: #000;
-      padding: 10px 20px;
-      border: 1px solid #ff9900;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      z-index: 1000;
-    }
-    #maintenance-notification p {
-      margin: 0;
-      font-size: 16px;
-    }
-    #close-notification {
-      background: none;
-      border: none;
-      color: #000;
-      font-size: 16px;
-      cursor: pointer;
-      margin-left: 10px;
-    }
-  </style>
- 
- 
-  <div id="maintenance-notification">
-    <p>🚧 Inconvinince Regreted! The site is currently under maintenance for Security Patching.  We’ll be back shortly! 🚧</p>
-    
-  </div>
- 
- 
- 
- 
- 
 
-        
-        <div class="qbootstrap-loader"></div>
 
-        <style>
-            @media (max-width: 480px) {
-                .imagess {
-                    width: 291px;
-                }
+    <style>
+        /* Add your CSS here */
+        #maintenance-notification {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #ffcc00;
+            color: #000;
+            padding: 10px 20px;
+            border: 1px solid #ff9900;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        #maintenance-notification p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        #close-notification {
+            background: none;
+            border: none;
+            color: #000;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+
+
+    <div id="maintenance-notification">
+        <p>🚧 Inconvinince Regreted! The site is currently under maintenance for Security Patching. We’ll be back
+            shortly! 🚧</p>
+
+    </div>
+
+
+    <style>
+        @media (max-width: 480px) {
+            .imagess {
+                width: 291px;
             }
+        }
 
-            /* Media Query for low resolution  Tablets, Ipads */
-            @media (min-width: 481px) and (max-width: 767px) {
-                .imagess {
-                    width: 291px;
-                }
+        /* Media Query for low resolution  Tablets, Ipads */
+        @media (min-width: 481px) and (max-width: 767px) {
+            .imagess {
+                width: 291px;
             }
-        </style> 
-        <div id="page">
-            <div class="row">
-                <div class="col-md-1">
-                </div>
-                <div class="col-md-8">
-                    <img src="images/jjm-kashmir-logo.png" class="imagess" />
-                    <img src="images/asokachakr.jpg" /><img src="images/jel.jpg" /><img src="images/phejam.jpg" />
-                </div>
-                <div class="col-md-1">
-                </div>
-                <div class="col-md-3">
-                    <br />
-                    <i class="fa fa-phone"></i>&nbsp;<b>HelpLine No.18001807027</b>
-                </div>
-
-  <nav class="nav nav-pills nav-fill" role="navigation">
-  
-  
-      <div class="row">
-  
-           <style>
-          .menu ul li a { 
-          color: #ffff; 
-           } 
-           </style>
-          <div class="col-xs-12 text-center">
-              <div class="menu" style="background: linear-gradient(221deg,#c62052 0,#280071 100%);">
-                  <ul>
-                      <li class="active"><a href="index.html" style="color: #fff">Home</a></li>
-                      <li class="has-dropdown-menu">
-                          <a href="About.html">About Us</a>
-                          <ul class="dropdown-menu" style="margin-top: -10px;">
-                              <li><a href="About.html" title="About Us">About Us</a></li>
-                              <li><a href="Welcome.html" title="Welcome Message">Welcome Message</a></li>
-                              <li><a href="Aim.html" title="Our Aim">Our Aim</a></li>
-                              <li><a href="Goal.html" title="Our Goal">Our Goal</a></li>
-                              <li><a href="Objective.html" title="Our Objective">Our Objective</a></li>
-                              <li><a href="Vission.html" title="Our Vission">Our Vission</a></li>
-  
-                          </ul>
-                      </li>
-  
-  
-                      <li><a href="organizationalchart.html">Organisational Chart</a></li>
-  
-                      <li class="has-dropdown-menu" style="z-index: 100;">
-                          <a href="#">RTI</a>
-  
-                          <ul class="dropdown-menu" style="margin-top: -10px;">
-                              <li><a href="all-rti.html" title="RTI-Acts">RTI-Acts</a></li>
-                              <li><a href="RTINoteBook.html" title="RTI NoteBook">RTI NoteBook</a></li>
-                          </ul>
-                      </li>
-  
-  
-                      <li><a href="Programmes.html">Programmmes</a></li>
-  
-  
-  
-  
-  
-  
-                      <li><a href="Water-Quality.html">Water Quality</a></li>
-  
-                      <li><a href="Contact.html" title="Contact US">Contact Us</a></li>
-  
-  
-  
-  
-  
-                      <li><a href="Allotments.html" title=" JJM Allotments">JJM Allotments</a></li>
-  
-                  </ul>
-  
-              </div>
-  
-          </div>
-      </div>
-  
-  
-  
-  </nav>
-
-
-
+        }
+    </style>
+    <div id="page">
+        <div class="row">
+            <div class="col-md-1">
             </div>
-
+            <div class="col-md-8">
+                <img src="images/jjm-kashmir-logo.png" class="imagess" />
+                <img src="images/asokachakr.jpg" /><img src="images/jel.jpg" /><img src="images/phejam.jpg" />
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-3">
+                <br />
+                <i class="fa fa-phone"></i>&nbsp;<b>HelpLine No.18001807027</b>
+            </div>
 
             <style>
                 @media (max-width: 480px) {
@@ -327,13 +258,105 @@
                 }
             </style>
 
-           
-                <div class="img-responsive">
 
-                    <span id="SliderDisplay_Label1"><div id="myNewCarousel" class="carousel slide" data-ride="carousel"> <div class="carousel-inner"><div class="item active img-responsive "><img src=SliderGallery/20073.jpg  style="object-fit:cover;width:100%;height:500px;"><h3>&nbsp;&nbsp;WSS</h3> </div><div class="item  "><img src=SliderGallery/20072.jpg class=" img-responsive "  style="object-fit:cover;width:100%;height:500px;" ><h3>&nbsp;&nbsp;WSS Anantnag</h3> </div><div class="item  "><img src=SliderGallery/20068.jpg class=" img-responsive "  style="object-fit:cover;width:100%;height:500px;" ><h3>&nbsp;&nbsp;Worthy Chief Engineer</h3> </div><div class="item  "><img src=SliderGallery/10055.jpg class=" img-responsive "  style="object-fit:cover;width:100%;height:500px;" ><h3>&nbsp;&nbsp;Chief Engineer Jal Shakti PHE Kashmir</h3> </div><div class="item  "><img src=SliderGallery/10046.jpg class=" img-responsive "  style="object-fit:cover;width:100%;height:500px;" ><h3>&nbsp;&nbsp;1</h3> </div><div class="item  "><img src=SliderGallery/45.jpg class=" img-responsive "  style="object-fit:cover;width:100%;height:500px;" ><h3>&nbsp;&nbsp;20 MGD Water Treatment Plant (Rangil)</h3> </div><div class="item  "><img src=SliderGallery/36.jpg class=" img-responsive "  style="object-fit:cover;width:100%;height:500px;" ><h3>&nbsp;&nbsp;Tangnar</h3> </div><a class="left carousel-control" href="#myNewCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#myNewCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a></div></div></span>
 
-                </div>
-           
+
+            <div class="text-center" style="background: linear-gradient(221deg,#c62052 0,#280071 100%);">
+                <nav class="nav" role="navigation">
+
+
+
+                    <a class="nav-link" style="color: #fff" href="index.html" style="color: #fff">Home</a>
+
+                    <a class="nav-link dropdown-toggle" style="color: #fff" data-bs-toggle="dropdown" role="button"
+                        aria-expanded="false" href="About.html">About Us</a>
+                    <ul class="dropdown-menu" style="background: linear-gradient(221deg,#c62052 0,#280071 100%);">
+                        <a class="nav-link" style="color: #fff" href="About.html" title="About Us">About Us</a>
+                        <a class="nav-link" style="color: #fff" href="Welcome.html" title="Welcome Message">Welcome
+                            Message</a>
+                        <a class="nav-link" style="color: #fff" href="Aim.html" title="Our Aim">Our Aim</a>
+                        <a class="nav-link" style="color: #fff" href="Goal.html" title="Our Goal">Our Goal</a>
+                        <a class="nav-link" style="color: #fff" href="Objective.html" title="Our Objective">Our
+                            Objective</a>
+                        <a class="nav-link" style="color: #fff" href="Vission.html" title="Our Vission">Our Vission</a>
+
+                    </ul>
+
+                    <a class="nav-link" style="color: #fff" href="organizationalchart.html">Organisational Chart</a>
+
+                    <a class="nav-link dropdown-toggle" style="color: #fff" data-bs-toggle="dropdown" role="button"
+                        aria-expanded="false" href="#">RTI</a>
+
+                    <ul class="dropdown-menu" style="background: linear-gradient(221deg,#c62052 0,#280071 100%);">
+                        <a class="nav-link" style="color: #fff" href="all-rti.html" title="RTI-Acts">RTI-Acts</a>
+                        <a class="nav-link" style="color: #fff" href="RTINoteBook.html" title="RTI NoteBook">RTI
+                            NoteBook</a>
+                    </ul>
+
+                    <a class="nav-link" style="color: #fff" href="Programmes.html">Programmmes</a>
+
+                    <a class="nav-link" style="color: #fff" href="Water-Quality.html">Water Quality</a>
+
+                    <a class="nav-link" style="color: #fff" href="Contact.html" title="Contact US">Contact Us</a>
+
+                    <a class="nav-link" style="color: #fff" href="Allotments.html" title=" JJM Allotments">JJM
+                        Allotments</a>
+
+                    <a class="nav-link" style="color: #fff" href="Login/index.html" title="Login"> <input type="submit"
+                            name="ctl00$btnlogin" value="Login" id="btnlogin" class="btn btn-primary" /></a>
+                </nav>
+            </div>
+
+
+
+
+
+
+
+            <div class="img-responsive">
+
+                <span id="SliderDisplay_Label1">
+                    <div id="myNewCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active img-responsive "><img src=SliderGallery/20073.jpg
+                                    style="object-fit:cover;width:100%;height:500px;">
+                                <h3>&nbsp;&nbsp;WSS</h3>
+                            </div>
+                            <div class="item  "><img src=SliderGallery/20072.jpg class=" img-responsive "
+                                    style="object-fit:cover;width:100%;height:500px;">
+                                <h3>&nbsp;&nbsp;WSS Anantnag</h3>
+                            </div>
+                            <div class="item  "><img src=SliderGallery/20068.jpg class=" img-responsive "
+                                    style="object-fit:cover;width:100%;height:500px;">
+                                <h3>&nbsp;&nbsp;Worthy Chief Engineer</h3>
+                            </div>
+                            <div class="item  "><img src=SliderGallery/10055.jpg class=" img-responsive "
+                                    style="object-fit:cover;width:100%;height:500px;">
+                                <h3>&nbsp;&nbsp;Chief Engineer Jal Shakti PHE Kashmir</h3>
+                            </div>
+                            <div class="item  "><img src=SliderGallery/10046.jpg class=" img-responsive "
+                                    style="object-fit:cover;width:100%;height:500px;">
+                                <h3>&nbsp;&nbsp;1</h3>
+                            </div>
+                            <div class="item  "><img src=SliderGallery/45.jpg class=" img-responsive "
+                                    style="object-fit:cover;width:100%;height:500px;">
+                                <h3>&nbsp;&nbsp;20 MGD Water Treatment Plant (Rangil)</h3>
+                            </div>
+                            <div class="item  "><img src=SliderGallery/36.jpg class=" img-responsive "
+                                    style="object-fit:cover;width:100%;height:500px;">
+                                <h3>&nbsp;&nbsp;Tangnar</h3>
+                            </div><a class="left carousel-control" href="#myNewCarousel" data-slide="prev"><span
+                                    class="glyphicon glyphicon-chevron-left"></span><span
+                                    class="sr-only">Previous</span></a><a class="right carousel-control"
+                                href="#myNewCarousel" data-slide="next"><span
+                                    class="glyphicon glyphicon-chevron-right"></span><span
+                                    class="sr-only">Next</span></a>
+                        </div>
+                    </div>
+                </span>
+
+            </div>
+
 
             <div class="col-xs-12">
 
@@ -381,10 +404,10 @@
                         </div>
                     </div>
                     <div class="col-md-1 asv AsvTs"></div>
-                    
 
 
-                    
+
+
                 </div>
             </div>
 
@@ -399,34 +422,51 @@
                         <div class="col-md-12">
 
                             <div class="col-md-4 animate-box">
-                                <div class="testimony text-center" style="background: #f7fbff; padding: 3em 1em 1em 1em;">
-                                    <span class="img-user" style="background-image: url(images/noti.png); top: -10px; width: 60px; height: 60px;"></span>
-                                    <span class="user" style="font-size: x-large; color: black;">Tenders / Notifications</span>
+                                <div class="testimony text-center"
+                                    style="background: #f7fbff; padding: 3em 1em 1em 1em;">
+                                    <span class="img-user"
+                                        style="background-image: url(images/noti.png); top: -10px; width: 60px; height: 60px;"></span>
+                                    <span class="user" style="font-size: x-large; color: black;">Tenders /
+                                        Notifications</span>
                                     <marquee height="300px" direction="Up" onmouseover="stop();" onmouseout="start();">
-                            <ul>
-               <span id="DisplayCircularList_Label1"> <li><a target=_blank href='Default-2.html?CircularID=20033';" >Verification of character and Antecedents of the candidates selected for the post of Draftsman</a></li></span>
- 
-                     
-       
-				</ul>
-                        </marquee>
+                                        <ul>
+                                            <span id="DisplayCircularList_Label1">
+                                                <li><a target=_blank href='Default-2.html?CircularID=20033'
+                                                        ;">Verification of character and Antecedents of the candidates
+                                                        selected for the post of Draftsman</a></li>
+                                            </span>
+
+
+
+                                        </ul>
+                                    </marquee>
                                 </div>
 
 
                                 <hr>
-                                <div class="testimony text-center" style="background: #f7fbff; padding: 3em 1em 1em 1em;">
-                                    <span class="img-user" style="background-image: url(images/prog.png); top: -10px; width: 60px; height: 60px;"></span>
-                                    <span class="user" style="font-size: x-large; color: black;">Orders / Circulars/SRO Notifications</span>
+                                <div class="testimony text-center"
+                                    style="background: #f7fbff; padding: 3em 1em 1em 1em;">
+                                    <span class="img-user"
+                                        style="background-image: url(images/prog.png); top: -10px; width: 60px; height: 60px;"></span>
+                                    <span class="user" style="font-size: x-large; color: black;">Orders / Circulars/SRO
+                                        Notifications</span>
                                     <marquee height="300px" direction="Up" onmouseover="stop();" onmouseout="start();">
-                            <ul>
-                      
+                                        <ul>
 
-                                <span id="DisplayOrders_Label1"> <li><a  target=_blank href='Orders83d3.pdf?OrderId=30034';">Notice Inviting Tenders Engagement of Hiring of Vehicle</a></li> <li><a  target=_blank href='Orders7f0a.pdf?OrderId=20035';">Appointment of Candidates for the post of Junior Engineers</a></li> <li><a  target=_blank href='Orders0261.pdf?OrderId=20034';">Appointment of Candidates for the post of Draftsman</a></li></span>
-                    
-                     
-				</ul>
 
-                        </marquee>
+                                            <span id="DisplayOrders_Label1">
+                                                <li><a target=_blank href='Orders83d3.pdf?OrderId=30034' ;">Notice
+                                                        Inviting Tenders Engagement of Hiring of Vehicle</a></li>
+                                                <li><a target=_blank href='Orders7f0a.pdf?OrderId=20035' ;">Appointment
+                                                        of Candidates for the post of Junior Engineers</a></li>
+                                                <li><a target=_blank href='Orders0261.pdf?OrderId=20034' ;">Appointment
+                                                        of Candidates for the post of Draftsman</a></li>
+                                            </span>
+
+
+                                        </ul>
+
+                                    </marquee>
                                 </div>
 
 
@@ -436,51 +476,86 @@
 
                             <div class="col-md-8 animate-box" style="padding-left: 5px; padding-right: 5px;">
 
-                                <h2 align="center" style="padding-top: 20px; font-size: 37px;">Welcome to Jal Shakti (PHE) Department Kashmir
+                                <h2 align="center" style="padding-top: 20px; font-size: 37px;">Welcome to Jal Shakti
+                                    (PHE) Department Kashmir
                                 </h2>
                                 <p>
                                     <img src="images/download.jpg" width="100%" height="50px">
                                 </p>
-                                
-                                <span id="lblwelcomemsg">The water is an essential commodity for all the living creatures. The intended purpose of Jal Shakti (PHE) Department Kashmir, is to ensure drinking water facility to all the habitations, Rural as well as Urban.
-The salient objectives and functions of Jal Shakti (PHE) Department, Kashmir are as under.
-To investigate, plan and implement water supply schemes to extend drinking water facility to Rural and Urban population including schools and other institutions.
-Besides the quantity of water as per the National norms, the quality of the water is also closely monitored by way of establishing drinking water quality testing labs at the division as well as sub-division level.</span>
+
+                                <span id="lblwelcomemsg">The water is an essential commodity for all the living
+                                    creatures. The intended purpose of Jal Shakti (PHE) Department Kashmir, is to ensure
+                                    drinking water facility to all the habitations, Rural as well as Urban.
+                                    The salient objectives and functions of Jal Shakti (PHE) Department, Kashmir are as
+                                    under.
+                                    To investigate, plan and implement water supply schemes to extend drinking water
+                                    facility to Rural and Urban population including schools and other institutions.
+                                    Besides the quantity of water as per the National norms, the quality of the water is
+                                    also closely monitored by way of establishing drinking water quality testing labs at
+                                    the division as well as sub-division level.</span>
 
                                 <h2 align="center" style="padding-top: 20px; font-size: xx-large;">Important Links
                                 </h2>
                                 <p>
                                     <img src="images/download.jpg" width="100%" height="50px">
                                 </p>
-                                <table width="100%" border="1" bordercolor="#DDDDDD" style="text-align: left!important;">
+                                <table width="100%" border="1" bordercolor="#DDDDDD"
+                                    style="text-align: left!important;">
 
                                     <tr>
-                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png" width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a href="https://www.jk.gov.in/jkeservices/home" target="_blank">Application for Commercial connections (Go  live Services)</a></td>
+                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png"
+                                                width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a
+                                                href="https://www.jk.gov.in/jkeservices/home"
+                                                target="_blank">Application for Commercial connections (Go live
+                                                Services)</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png" width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a href="#" target="_blank">Jal Shakti Department Jammu and Kashmir</a></td>
+                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png"
+                                                width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a
+                                                href="#" target="_blank">Jal Shakti Department Jammu and Kashmir</a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png" width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a href="#" target="_blank">Jal Jeevan  Mission</a></td>
+                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png"
+                                                width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a
+                                                href="#" target="_blank">Jal Jeevan Mission</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png" width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a href="#" target="_blank">General Administration Department, Government of Jammu and Kashmir</a></td>
+                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png"
+                                                width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a
+                                                href="#" target="_blank">General Administration Department, Government
+                                                of Jammu and Kashmir</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png" width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a href="http://www.indiawater.nic.in/" target="_blank">National Rural Drinking Water Programme, Ministry of Drinking Water &amp; Sanitation, GOI</a></td>
+                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png"
+                                                width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a
+                                                href="http://www.indiawater.nic.in/" target="_blank">National Rural
+                                                Drinking Water Programme, Ministry of Drinking Water &amp; Sanitation,
+                                                GOI</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png" width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a href="http://www.ddws.gov.in/" target="_blank">Ministry of Drinking Water &amp; Sanitation, GOI</a></td>
+                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png"
+                                                width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a
+                                                href="http://www.ddws.gov.in/" target="_blank">Ministry of Drinking
+                                                Water &amp; Sanitation, GOI</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png" width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a href="http://www.wrmin.nic.in/" target="_blank">Ministry of Water Resources, GOI</a></td>
+                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png"
+                                                width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a
+                                                href="http://www.wrmin.nic.in/" target="_blank">Ministry of Water
+                                                Resources, GOI</a></td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png" width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a href="http://www.http://phekashmir.com" target="_blank">Jal Shakti (PHE) Department, Kashmir</a></td>
+                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png"
+                                                width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a
+                                                href="http://www.http://phekashmir.com" target="_blank">Jal Shakti (PHE)
+                                                Department, Kashmir</a></td>
                                     </tr>
 
                                     <tr>
-                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png" width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a href="#" target="_blank">I&amp;F.C. Department, Kashmir</a></td>
+                                        <td style="text-align: left!important;">&nbsp<img src="images/drop.png"
+                                                width="25" height="20" style="vertical-align: top">&nbsp;&nbsp;<a
+                                                href="#" target="_blank">I&amp;F.C. Department, Kashmir</a></td>
                                     </tr>
                                     <tr>
                                     </tr>
@@ -494,7 +569,9 @@ Besides the quantity of water as per the National norms, the quality of the wate
                                 </p>
 
                                 <a href="Allotments.html" style="text-align: center;">
-                                    <div style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; padding: 5px;"><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;Allotments</div>
+                                    <div
+                                        style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; padding: 5px;">
+                                        <i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;Allotments</div>
                                     <br>
                                 </a>
                             </div>
@@ -503,7 +580,8 @@ Besides the quantity of water as per the National norms, the quality of the wate
                             <div id="qbootstrap-doctor" style="padding: 0em 0;">
                                 <div class="container-fluid">
                                     <div class="row animate-box">
-                                        <div class="col-md-6 col-md-offset-3 text-center qbootstrap-heading" style="margin-bottom: 1em;">
+                                        <div class="col-md-6 col-md-offset-3 text-center qbootstrap-heading"
+                                            style="margin-bottom: 1em;">
                                             <h2>Honourable Panel</h2>
                                             <p></p>
                                         </div>
@@ -511,16 +589,18 @@ Besides the quantity of water as per the National norms, the quality of the wate
                                     <div class="row">
                                         <div class="col-md-3 animate-box text-center">
                                             <div class="doctor">
-                                                <div class="staff-img" style="background-image: url(images/ManojSinha.jpg);"></div>
+                                                <div class="staff-img"
+                                                    style="background-image: url(images/ManojSinha.jpg);"></div>
                                                 <h3><a href="#">Shri Manoj Sinha</a></h3>
                                                 <span>Hon'ble Lt. Governor</span>
 
                                             </div>
                                         </div>
-                                        
+
                                         <div class="col-md-3 animate-box text-center">
                                             <div class="doctor">
-                                                <div class="staff-img" style="background-image: url(images/shriatalaulloo.jpg);"></div>
+                                                <div class="staff-img"
+                                                    style="background-image: url(images/shriatalaulloo.jpg);"></div>
                                                 <h3><a href="#">Shri. Atal Dulloo</a></h3>
                                                 <span>(IAS) Worthy Chief Secretary UT of J&K</span>
 
@@ -528,17 +608,20 @@ Besides the quantity of water as per the National norms, the quality of the wate
                                         </div>
                                         <div class="col-md-3 animate-box text-center">
                                             <div class="doctor">
-                                                <div class="staff-img" style="background-image: url(images/b.jpg);"></div>
+                                                <div class="staff-img" style="background-image: url(images/b.jpg);">
+                                                </div>
                                                 <h3><a href="#">Shri. Shaleen Kabra IAS</a></h3>
                                                 <span>Financial Commissioner (Additional Chief Secretary)
-                                        Jal Shakti Department, J&K
+                                                    Jal Shakti Department, J&K
                                                 </span>
 
                                             </div>
                                         </div>
                                         <div class="col-md-3 animate-box text-center">
                                             <div class="doctor">
-                                                <div class="staff-img" style="background-image: url(images/cheifengineerervevikkohli.jpg);"></div>
+                                                <div class="staff-img"
+                                                    style="background-image: url(images/cheifengineerervevikkohli.jpg);">
+                                                </div>
                                                 <h3><a href="#">Er. Vivek Kohli</a></h3>
                                                 <span>Chief Engineer,Jal Shakti PHE Department,Kashmir </span>
 
@@ -564,56 +647,89 @@ Besides the quantity of water as per the National norms, the quality of the wate
 
                     <div class="col-md-3 animate-box" style="background: white">
                         <div class="testimony text-center" style="padding: 3em 1em 1em 1em;">
-                            <span class="img-user" style="background-image: url(images/links.jpg); top: -10px; left: -30px; width: 60px; height: 60px;"></span>
+                            <span class="img-user"
+                                style="background-image: url(images/links.jpg); top: -10px; left: -30px; width: 60px; height: 60px;"></span>
                             <span class="user" style="font-size: x-large; color: black;">S.E / Divisions</span>
                             <div class="col-md-12">
 
-                                <div style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; margin-bottom: 10PX; text-align: left; padding-left: 10px;"><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://sesrinagar.jalshaktiphekashmir.in/" style="color: white;" target="_blank">S.E Hyd.Circle Sgr-Gbl</a></div>
-                                <div style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; margin-bottom: 10PX; text-align: left; padding-left: 10px;"><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://seanantnag.jalshaktiphekashmir.in/" style="color: white;" target="_blank">S.E Hyd.Circle Ang-Kulgam</a></div>
-                                <div style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; margin-bottom: 10PX; text-align: left; padding-left: 10px;"><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://sebaramullah.jalshaktiphekashmir.in/" style="color: white;" target="_blank">S.E Hyd.Circle Baramulla-Bandipora</a></div>
-                                <div style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; text-align: left; margin-bottom: 10PX; padding-left: 10px;"><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://sebudgam.jalshaktiphekashmir.in/" style="color: white;" target="_blank">S.E Hyd.Circle Budgam</a></div>
-                                <div style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; text-align: left; margin-bottom: 10PX; padding-left: 10px;"><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://sepulwama.jalshaktiphekashmir.in/" style="color: white;" target="_blank">S.E Hyd.Circle Pulwama-Shopian HQ Shopian</a></div>
-                                <div style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; text-align: left; margin-bottom: 10PX; padding-left: 10px;"><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a href="http://sekupwara.jalshaktiphekashmir.in/" style="color: white;" target="_blank">S.E Hyd.Circle Kupwara-Handwara</a></div>
-                                <div style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; text-align: left; margin-bottom: 10PX; padding-left: 10px;"><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a href="http://senorth.jalshaktiphekashmir.in/" style="color: white;" target="_blank">S.E PHE Mech. Circle(NORTH)</a></div>
-                                <div style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; text-align: left; padding-left: 10px;"><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a href="http://sesouth.jalshaktiphekashmir.in/" style="color: white;" target="_blank">S.E PHE Mech. Circle(SOUTH)</a></div>
+                                <div
+                                    style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; margin-bottom: 10PX; text-align: left; padding-left: 10px;">
+                                    <i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a
+                                        href="https://sesrinagar.jalshaktiphekashmir.in/" style="color: white;"
+                                        target="_blank">S.E Hyd.Circle Sgr-Gbl</a></div>
+                                <div
+                                    style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; margin-bottom: 10PX; text-align: left; padding-left: 10px;">
+                                    <i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a
+                                        href="https://seanantnag.jalshaktiphekashmir.in/" style="color: white;"
+                                        target="_blank">S.E Hyd.Circle Ang-Kulgam</a></div>
+                                <div
+                                    style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; margin-bottom: 10PX; text-align: left; padding-left: 10px;">
+                                    <i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a
+                                        href="https://sebaramullah.jalshaktiphekashmir.in/" style="color: white;"
+                                        target="_blank">S.E Hyd.Circle Baramulla-Bandipora</a></div>
+                                <div
+                                    style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; text-align: left; margin-bottom: 10PX; padding-left: 10px;">
+                                    <i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a
+                                        href="https://sebudgam.jalshaktiphekashmir.in/" style="color: white;"
+                                        target="_blank">S.E Hyd.Circle Budgam</a></div>
+                                <div
+                                    style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; text-align: left; margin-bottom: 10PX; padding-left: 10px;">
+                                    <i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a
+                                        href="https://sepulwama.jalshaktiphekashmir.in/" style="color: white;"
+                                        target="_blank">S.E Hyd.Circle Pulwama-Shopian HQ Shopian</a></div>
+                                <div
+                                    style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; text-align: left; margin-bottom: 10PX; padding-left: 10px;">
+                                    <i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a
+                                        href="http://sekupwara.jalshaktiphekashmir.in/" style="color: white;"
+                                        target="_blank">S.E Hyd.Circle Kupwara-Handwara</a></div>
+                                <div
+                                    style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; text-align: left; margin-bottom: 10PX; padding-left: 10px;">
+                                    <i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a
+                                        href="http://senorth.jalshaktiphekashmir.in/" style="color: white;"
+                                        target="_blank">S.E PHE Mech. Circle(NORTH)</a></div>
+                                <div
+                                    style="background: linear-gradient(221deg,#c62052 0,#280071 100%); color: #fff; text-align: left; padding-left: 10px;">
+                                    <i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp;<a
+                                        href="http://sesouth.jalshaktiphekashmir.in/" style="color: white;"
+                                        target="_blank">S.E PHE Mech. Circle(SOUTH)</a></div>
                                 <div class="MainDv DispNo" id="mainDv">
                                 </div>
                             </div>
-                            
+
 
 
 
                             <script type="text/javascript">
-                        $(document).ready(function () {
-                            var strDivisions = "";
-                            $("#LblDIrectorate").removeClass("DispNo");
-                            $("#mainDv").removeClass("DispNo");
+                                $(document).ready(function () {
+                                    var strDivisions = "";
+                                    $("#LblDIrectorate").removeClass("DispNo");
+                                    $("#mainDv").removeClass("DispNo");
 
-                            var strDirectorate = "";
-                            $.ajax({
-                                type: "POST",
-                                contentType: "application/json; charset=utf-8",
-                                datatype: "JSON",
-                                url: "/CMS/CodeBehind/SetRetriveData.asmx/RetrieveDivisionsToDisplay",
-                                success: function (data) {
-                                    var xmlDocDetails = jQuery.parseXML(data.d);
+                                    var strDirectorate = "";
+                                    $.ajax({
+                                        type: "POST",
+                                        contentType: "application/json; charset=utf-8",
+                                        datatype: "JSON",
+                                        url: "/CMS/CodeBehind/SetRetriveData.asmx/RetrieveDivisionsToDisplay",
+                                        success: function (data) {
+                                            var xmlDocDetails = jQuery.parseXML(data.d);
 
-                                    $(xmlDocDetails).find('NewDataSet').each(function () {
-                                        $(this).find('Table').each(function () {
-                                            if ($(this).find('DivsionName').text() != "Chief Engineer") {
-                                                strDivisions += "<ul><li  ALngTxtPubInfo ddnntitle sidebar ContentStyle\" title=\"" + $.trim($(this).find('DivsionName').text()) + "\" data-id=\"" + $.trim($(this).find('DivsionName').text()) + "\">" +
-                                                    "<a class=\"ALngTxtPubInfo\" href=\"" + $.trim($(this).find('DivisionURL').text()) + "?Id=" + $.trim($(this).find('DivsionID').text()) + "\" target=#>" +
-                                                    "<div class=\"col-xs-12 fa fa-tint  chopChar sidebarVB\" style='font-size:20px;color:white;  background: linear-gradient(221deg,#c62052 0,#280071 100%);text-align:left!important;' id=DivSion" + $.trim($(this).find('DivsionID').text()) + ">&nbsp;&nbsp;" + $.trim($(this).find('DivsionName').text()) + "</div>" +
-                                                    "</a>" +
-                                                    "</li></ul>";
-                                            }
+                                            $(xmlDocDetails).find('NewDataSet').each(function () {
+                                                $(this).find('Table').each(function () {
+                                                    if ($(this).find('DivsionName').text() != "Chief Engineer") {
+                                                        strDivisions += "<ul><li  ALngTxtPubInfo ddnntitle sidebar ContentStyle\" title=\"" + $.trim($(this).find('DivsionName').text()) + "\" data-id=\"" + $.trim($(this).find('DivsionName').text()) + "\">" +
+                                                            "<a class=\"ALngTxtPubInfo\" href=\"" + $.trim($(this).find('DivisionURL').text()) + "?Id=" + $.trim($(this).find('DivsionID').text()) + "\" target=#>" +
+                                                            "<div class=\"col-xs-12 fa fa-tint  chopChar sidebarVB\" style='font-size:20px;color:white;  background: linear-gradient(221deg,#c62052 0,#280071 100%);text-align:left!important;' id=DivSion" + $.trim($(this).find('DivsionID').text()) + ">&nbsp;&nbsp;" + $.trim($(this).find('DivsionName').text()) + "</div>" +
+                                                            "</a>" +
+                                                            "</li></ul>";
+                                                    }
 
-                                        });
+                                                });
+                                            });
+                                            $('#mainDv').append(strDivisions);
+                                        }
                                     });
-                                    $('#mainDv').append(strDivisions);
-                                }
-                            });
-                        });
+                                });
 
 
                             </script>
@@ -632,20 +748,23 @@ Besides the quantity of water as per the National norms, the quality of the wate
 
                 <div class="clearfix"></div>
                 <footer class="Hr">
-                    <div class="col-md-12" style="background-image: url('images/footerimg.jpg'); color: white; background-repeat: no-repeat; background-size: cover; padding: 0px!important;">
+                    <div class="col-md-12"
+                        style="background-image: url('images/footerimg.jpg'); color: white; background-repeat: no-repeat; background-size: cover; padding: 0px!important;">
                         <div class="col-md-4">
                             <div class="dnntitle">
-                                <h3 class="titleline" style="color: white;"><span class="title1">Contact Us !</span></h3>
+                                <h3 class="titleline" style="color: white;"><span class="title1">Contact Us !</span>
+                                </h3>
                             </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d211427.26926799395!2d74.6666703!3d34.106639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e19af3651273df%3A0x27b18b788814bd2!2sPublic+Health+Engineering+Department%2C+Srinagar+190012!5e0!3m2!1sen!2sin!4v1517206824075" width="100%" height="200" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d211427.26926799395!2d74.6666703!3d34.106639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e19af3651273df%3A0x27b18b788814bd2!2sPublic+Health+Engineering+Department%2C+Srinagar+190012!5e0!3m2!1sen!2sin!4v1517206824075"
+                                width="100%" height="200" frameborder="0" style="border: 0" allowfullscreen></iframe>
                             <p>
-                                <p>
-                                    JAL SHAKTI PHE KASHMIR<br />
-                                    <h4 style="color: white;">(PUBLIC HEALTH ENGINEERING DEPARTMENT)</h4>
-                                </p>
-                                <span>UT OF JAMMU AND KASHMIR</span><br>
-                                District Srinagar,
-                 and Kashmir 190008.<br>
+                            <p>
+                                JAL SHAKTI PHE KASHMIR<br />
+                            <h4 style="color: white;">(PUBLIC HEALTH ENGINEERING DEPARTMENT)</h4>
+                            </p>
+                            <span>UT OF JAMMU AND KASHMIR</span><br>
+                            District Srinagar, and Kashmir 190008.<br>
                             </p>
 
                         </div>
@@ -656,14 +775,22 @@ Besides the quantity of water as per the National norms, the quality of the wate
                             <div class="row" style="color: white;">
                                 <div class="col-xs-6 col-sm-6" style="color: white;">
                                     <ul style="color: white;">
-                                        <li><a href="https://www.phejammu.co.in/" title="Tenders" style="color: white;" target="_blank">Phe Jammu</a></li>
-                                        <li><a href="https://jktenders.gov.in/nicgep/app" title="Circulars" style="color: white;" target="_blank">JK Tenders</a></li>
-                                        <li><a href="https://ejalshakti.gov.in/JJM/Login.aspx?Ty=se" title="Orders" style="color: white;" target="_blank">E Jal Shakti</a></li>
-                                        <li><a href="https://jkgad.nic.in/" title="Letter" style="color: white;" target="_blank">JKGAD</a></li>
-                                        <li><a href="https://jkphedwaterbilling.com/" title="Allotments" style="color: white;" target="_blank">JKPHED Water Billing</a></li>
-                                        <li><a href="https://jalshakti.gov.in/" title="Grievance Cell" style="color: white;" target="_blank">Jal Shakti</a></li>
-                                        <li><a href="https://jkjalshakti.nic.in/" title="GAD" target="_blank" style="color: white;" >JK Jal Shakti</a></li>
-                                        <li><a href="http://jkpheirrigation.nic.in/" title="JKPHE/ I&FC.GOV.IN" target="_blank" style="color: white;" >JKPHE/ I&FC.GOV.IN</a></li>
+                                        <li><a href="https://www.phejammu.co.in/" title="Tenders" style="color: white;"
+                                                target="_blank">Phe Jammu</a></li>
+                                        <li><a href="https://jktenders.gov.in/nicgep/app" title="Circulars"
+                                                style="color: white;" target="_blank">JK Tenders</a></li>
+                                        <li><a href="https://ejalshakti.gov.in/JJM/Login.aspx?Ty=se" title="Orders"
+                                                style="color: white;" target="_blank">E Jal Shakti</a></li>
+                                        <li><a href="https://jkgad.nic.in/" title="Letter" style="color: white;"
+                                                target="_blank">JKGAD</a></li>
+                                        <li><a href="https://jkphedwaterbilling.com/" title="Allotments"
+                                                style="color: white;" target="_blank">JKPHED Water Billing</a></li>
+                                        <li><a href="https://jalshakti.gov.in/" title="Grievance Cell"
+                                                style="color: white;" target="_blank">Jal Shakti</a></li>
+                                        <li><a href="https://jkjalshakti.nic.in/" title="GAD" target="_blank"
+                                                style="color: white;">JK Jal Shakti</a></li>
+                                        <li><a href="http://jkpheirrigation.nic.in/" title="JKPHE/ I&FC.GOV.IN"
+                                                target="_blank" style="color: white;">JKPHE/ I&FC.GOV.IN</a></li>
                                     </ul>
 
                                 </div>
@@ -681,31 +808,40 @@ Besides the quantity of water as per the National norms, the quality of the wate
                             </div>
                             <div class="col-xs-12">
                                 <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                                    <img id="EvtHkmDlgUtv1" src="BGallery/1.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                                    <img id="EvtHkmDlgUtv1" src="BGallery/1.jpg"
+                                        class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
                                 </div>
                                 <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                                    <img id="EvtHkmDlgUtv2" src="BGallery/2.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                                    <img id="EvtHkmDlgUtv2" src="BGallery/2.jpg"
+                                        class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
                                 </div>
                                 <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                                    <img id="EvtHkmDlgUtv3" src="BGallery/3.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                                    <img id="EvtHkmDlgUtv3" src="BGallery/3.jpg"
+                                        class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
                                 </div>
                                 <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                                    <img id="EvtHkmDlgUtv4" src="BGallery/4.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                                    <img id="EvtHkmDlgUtv4" src="BGallery/4.jpg"
+                                        class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
                                 </div>
                                 <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                                    <img id="EvtHkmDlgUtv5" src="BGallery/5.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                                    <img id="EvtHkmDlgUtv5" src="BGallery/5.jpg"
+                                        class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
                                 </div>
                                 <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                                    <img id="EvtHkmDlgUtv6" src="BGallery/6.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                                    <img id="EvtHkmDlgUtv6" src="BGallery/6.jpg"
+                                        class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
                                 </div>
                                 <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                                    <img id="EvtHkmDlgUtv7" src="BGallery/7.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                                    <img id="EvtHkmDlgUtv7" src="BGallery/7.jpg"
+                                        class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
                                 </div>
                                 <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                                    <img id="EvtHkmDlgUtv8" src="BGallery/8.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                                    <img id="EvtHkmDlgUtv8" src="BGallery/8.jpg"
+                                        class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
                                 </div>
                                 <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                                    <img id="EvtHkmDlgUtv9" src="BGallery/9.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
+                                    <img id="EvtHkmDlgUtv9" src="BGallery/9.jpg"
+                                        class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
                                 </div>
                             </div>
                             <div style="margin-top: 10px;">
@@ -746,7 +882,8 @@ Besides the quantity of water as per the National norms, the quality of the wate
                 <div class="footer-btm col-md-12" style="background: linear-gradient(221deg,#c62052 0,#280071 100%)">
                     <div class="container">
                         <p class="col-md-6">© Copyright 2019 | All Rights Reserved</p>
-                        <p class="col-md-6">Designed | Developed | Maintained By :<a href="http://www.nationalitsolutions.com/" target="_blank">National IT Solutions</a></p>
+                        <p class="col-md-6">Designed | Developed | Maintained By :<a
+                                href="http://www.nationalitsolutions.com/" target="_blank">National IT Solutions</a></p>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -757,11 +894,12 @@ Besides the quantity of water as per the National norms, the quality of the wate
                 <link rel="stylesheet" href="../code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
 
 
-                
+
 
 
             </div>
         </div>
-    </form>
+        </form>
 </body>
+
 </html>
