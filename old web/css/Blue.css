@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/*
+Template Name: Book Of Wisdom
+Template URI: http://www.os-templates.com/
+Description: Designed and Built by <a href="http://www.os-templates.com/">OS Templates</a>. This modern template is adaptable, lightweight and fully customisable. The template is easy to use, enabling you to create your site within minutes.
+Version: 1.0
+Author: OS-Templates.com
+Author URI: http://www.os-templates.com/
+Licence: Single Site
+Licence URI: http://www.os-templates.com/template-terms
+File: Blue CSS
+*/
+
+/* Base Colour: #56AED4 */
+a {
+  --primary: #0e7d81;
+  color: #2b9dce;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/*-------------------------------Colour Coding for layout.css-----------------------------*/
+/*----------------------------------------------------------------------------------------*/
+
+/* Generalise */
+h1 span:after,
+h2 span:after,
+h3 span:after,
+h4 span:after,
+h5 span:after,
+h6 span:after {
+  background-color: #2c62a0;
+}
+
+#intro .cc.circle #p-footer .cc.circle {
+  color: #ffffff;
+  background-color: rgba(27, 127, 204, 0);
+}
+#intro,
+.cc .circle {
+  color: #ffffff;
+  background-color: #698eb400;
+}
+#intro a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+
+#intro a::before {
+  content: "";
+  position: absolute;
+  background: rgba(29, 199, 230, 0.548);
+  transition: width 0.02s ease, height 0.02s ease, top 0.02s ease,
+    left 0.02s ease;
+  border-radius: 10%;
+  transform: translate(-50%, -50%);
+}
+
+#intro a:hover::before {
+  border-color: yellow;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 10;
+}
+
+.date-icon {
+  color: #ffffff;
+  background-color: #587fac;
+}
+.date-icon em {
+  color: inherit;
+  background-color: #4d6175;
+}
+
+/* Link Block */
+.linkblock .title {
+  border-color: #255b92;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/*-------------------------------Colour Coding for navigation.css-------------------------*/
+/*----------------------------------------------------------------------------------------*/
+
+/* Top Navigation */
+#topnav li.active a,
+#topnav a:hover,
+#topnav li:hover > a,
+#topnav ul li li:hover > a,
+#topnav ul li.active ul .active > a {
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: var(--primary);
+  border-top-color: #0a0a0a3f;
+  transition: font-weight 0.3s ease; /* Add transition for font-weight */
+}
+
+/* Page Breadcrumb */
+.breadcrumb li:last-child a {
+  color: #ffffff;
+}
+
+/* Sidebar Navigation */
+.container .sidebar aside nav a:hover,
+.container .sidebar aside nav .active > a {
+  color: #56aed4;
+  background-color: inherit;
+}
+
+/* Scroll To Top */
+#scrolltotop {
+  color: #ffffff;
+  background-color: #2e6075;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/*-------------------------------Colour Coding for elements.css---------------------------*/
+/*----------------------------------------------------------------------------------------*/
+
+/* To completely override all the pre-defined button colours uncomment the following */
+
+/* Lists - For ul + ol */
+.list.tagcloud li a:hover,
+.list.posttags li a:hover {
+  color: #ffffff;
+  background-color: #56aed4;
+}
+.list.posttags li a:hover:before {
+  border-right-color: #56aed4;
+}
+
+/* Call To Action - Best used as a full width banner */
+.calltoaction.opt1,
+.calltoaction.opt2,
+.calltoaction.opt3 {
+  border-color: #56aed4;
+}
+
+/* Jquery Tabs */
+.tab-wrapper .tab-nav li.ui-tabs-active a {
+  border-top-color: #0a0a0a3f;
+}
+
+/* Jquery Accordion + Jquery Toggle */
+.accordion-title:hover,
+.toggle-title:hover,
+.accordion-wrapper .accordion-title.active,
+.toggle-wrapper .toggle-title.active {
+  color: #ffffff;
+  background-color: #56aed4;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/*-------------------------------Colour Coding for pages.css------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+
+/* Site Wide Shared Classes */
+.blog-post-title a:hover {
+  color: #56aed4;
+  background-color: inherit;
+}
+
+/* Homepage */
+#intro ul {
+  border-color: #688db3;
+}
+
+/* Gallery */
+#gallery section figure ul li a:hover:after {
+  color: #56aed4;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/*-------------------------------Colour Coding for layout.css------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+
+.row0 {
+  background-color: rgb(27 177 204 / 100%);
+  border-color: #5e7791;
+}
+.row0 a {
+  background-color: #577fa7;
+}
+.row2 {
+  background-color: #3982cc;
+}
+.row3 {
+  background-color: rgb(27 177 204 / 100%);
+}
+.row4 {
+  border-color: #4e6580;
+  background-color: #ebf5fb;
+}
+.row5 {
+  color: #ffffff;
+  background-color: rgb(27 177 204 / 100%);
+}
+.row6,
+#copyright {
+  color: #ffffff;
+  background-color: rgb(27, 177, 204);
+}
+
+/* Topbar */
+#topbar form input {
+  background-color: #2d5277;
+}
+#topbar form button[type="submit"] {
+  color: inherit;
+  background-color: #56aed4;
+}
+
+/* Footer */
+#p-footer form input {
+  background-color: #5a738f;
+}
+#p-footer form input[type="submit"] {
+  color: inherit;
+  background-color: #56aed4;
+}
+
+/* Copyright */
+#copyright {
+  border-color: #1d3b5e;
+}
