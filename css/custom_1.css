@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/*
+Template Name: Book Of Wisdom
+Template URI: http://www.os-templates.com/
+Description: Designed and Built by <a href="http://www.os-templates.com/">OS Templates</a>. This modern template is adaptable, lightweight and fully customisable. The template is easy to use, enabling you to create your site within minutes.
+Version: 1.0
+Author: OS-Templates.com
+Author URI: http://www.os-templates.com/
+Licence: Single Site
+Licence URI: http://www.os-templates.com/template-terms
+File: Custom CSS
+*/
+
+table tr:hover,
+.table .t-row:hover {
+  color: inherit;
+  background-color: inherit;
+}
+
+.t-header td {
+  color: #c2bdbd;
+  background-color: #e1e0df;
+  border-color: #e1e0df;
+}
+.t-header td {
+  font-weight: normal;
+  font-size: 18px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.ui-datepicker-calendar thead tr th {
+  font-size: inherit;
+}
+
+select {
+  padding: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+table th {
+  color: #686868;
+  background-color: #e1e0df;
+  border-color: #e1e0df;
+}
+table tr,
+.table .t-row {
+  color: #00ff15;
+  background-color: inherit;
+}
+table tr:hover,
+.table .t-row:hover {
+  color: #686868;
+  background-color: #f1f1f1;
+}
+
+.alert-msg {
+  overflow: auto;
+  height: 130px;
+  margin: 0px;
+  padding: 5px;
+}
+.ColouredList {
+  padding-left: 0px;
+}
+.ColouredList li {
+  list-style-type: none;
+  display: table;
+}
+.ColouredList li:before {
+  content: "-";
+  padding-right: 10px;
+  display: table-cell;
+  text-align: right;
+}
+
+/*************************Custom STyle for Footer and header ********************************/
+.linkblock {
+  padding: 20px 0;
+}
+#p-footer {
+  border-top: 3px groove #d6eaf8;
+}
+#copyright {
+  padding: 10px 0 10px 0;
+}
+#intro li a {
+  padding: 20px 10px;
+}
+#intro li {
+  width: 17%;
+}
+.container {
+  padding: 40px 0px;
+  text-align: justify;
+}
+#header {
+  padding: 25px 0 15px;
+}
+
+/************** For research page     ****************/
+.divResearch {
+  text-align: justify;
+}
+.divResearch p {
+  margin-bottom: 20px;
+}
+.padded {
+  padding: 10px;
+}
+.listStyle {
+  margin: 10px;
+  list-style-image: url(/images/drop.png);
+}
+.z-indexed {
+  z-index: 10;
+}

@@ -1,0 +1,41 @@
+.form-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #0e7d81;
+  font: medium bold;
+  background: #e6f7f7ad;
+  border-radius: 8px;
+  margin: 5px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 50vw;
+  max-width: 1350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-layout:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px #2b9dce;
+}
+
+input,
+textarea,
+select {
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 5px;
+  border: 1px solid #0e7d81;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #0e7d81;
+  border-style: dashed;
+  outline: none;
+}

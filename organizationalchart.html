@@ -1,602 +1,573 @@
-
-
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="en">
 
 <head>
-    <title>PHE Kashmir</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="PHE Kashmir, Constant monitoring of quality of drinking water supply for safe and sustainable water for all; Ensuring access to safe water and enable every citizen to monitor and maintain serveillance on his / her drinking water,Water is an elixir of life." />
-    <meta name="keywords" content="PHE Kashmir,Public Health Engineering Department,Jammu And Kashmir,Sindh, Liddar, Vishav, Rambiara, Doodhganga, Shaliganga, Pohru, Erin, Madhumati, Sukhnag, Aripal,Sandran, Bringi, Romshi, Ferozpore,wullar, Dal, Manasbal, Aanchar, Gangbal, Tarsar, Marsar, Gadsar , Satsar, Kokernag, Krishensar, Bramsar, Nigeen, Shesshnag, Vishensar, Dachigam,India,Jammu And Kashmir India,Water,Drinking Water" />
-    <meta property="og:title" content="Public Health Engineering Department in  Jammu And Kashmir India, Water is an elixir of life, Jammu and Kashmir" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Public Health Engineering Department, PHE Kashmir" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <link href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- title START -->
+  <meta charset="UTF-8" />
+  <title>Jal Shakti PHE Kashmir</title>
+  <meta name="description" content="Offical Web site of Jal Shakti PHE Kashmir" />
+  <meta name="keywords" content="PHE, PHE Kashmir, Jal Shakti Kashmir, Jal Shakti PHE Kashmir" />
+  <meta name="author" content="Soleiman & Kamil" />
+  <link rel="ICON" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Vollkorn" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
-    <script src="bootstrap/js/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
+  <link class="theme_link" href="css/Blue.css" rel="stylesheet" type="text/css" />
 
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/slicknav.css" rel="stylesheet" />
-    <link href="css/Styles.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/mediaqueries.css" rel="stylesheet" type="text/css" media="all" />
 
-
-    <script type="text/javascript">
-
-
-        $(document).ready(function () {
-            $('#menu').slicknav();
-        });
-
-    </script>
-    <script>
-        function openModal() {
-            document.getElementById('myModal').style.display = "block";
-        }
-
-        function closeModal() {
-            document.getElementById('myModal').style.display = "none";
-        }
-
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-    </script>
-    <script src="js/owl.carousel.min.js"></script>
-    <link href="css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="css/owl.theme.default.css" rel="stylesheet" />
-
-    <script>
-        $(document).ready(function () {
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 2,
-                        nav: true
-                    },
-                    600: {
-                        items: 3,
-                        nav: true
-                    },
-                    1000: {
-                        items: 5,
-                        nav: true,
-                        loop: false,
-                        margin: 10
-                    }
-                }
-            })
-
-
-
-            $('.pm-staff-profile-expander').click(function () {
-                $('.pm-staff-profile-expander').removeClass('fa-plus').addClass('fa-close');
-                $('.pm-staff-profile-quote').addClass('top');
-                $('.pm-staff-profile-expander').click(function () {
-                    $('.pm-staff-profile-expander').addClass('fa-plus').removeClass('fa-close');
-                    $('.pm-staff-profile-quote').removeClass('top');
-                });
-            });
-
-
-
-        })
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('.menu').addClass('top');
-            } else {
-                $('.menu').removeClass('top');
-            }
-        });
-    </script>
-
-
+  <!-- title END -->
 </head>
-<body>
-    <form method="post" action="https://jalshaktiphekashmir.in/organizationalchart.aspx" id="form1">
-<div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEzNTQ2MjAwOA9kFgJmD2QWAgIBD2QWAgIDD2QWAgIBD2QWAmYPDxYCHgRUZXh0BTdPcmdhbml6YXRpb25hbCBjaGFydCBPZiBLYXNobWlyIFBIRSBEZXBhcnRtZW50IFNyaW5hZ2FyZGRklVFwPdK66Rv6Q4R5F0uO5S8wonFub5jwtjcxgGcKk+4=" />
-</div>
 
-<div class="aspNetHidden">
+<body id="top">
+  <!-- ################################################################################################ -->
+  <!-- Transition -->
+  <!-- Transition -->
+  <div id='caustics'></div>
+  <!-- ################################################################################################ -->
+  <!-- LOGO -->
+  <!-- LOGO START -->
+  <div class="wrapper row1">
+    <header role="banner" id="header" class="clear">
+      <div class="fl_left">
+        <h1>
+          <a href="/index.html">
+            <img src="images/ashoka.png" style="height:5rem" />|
+            <img class="logo" src="images/logo.png" alt="Jal shakti Phe Department" /></a>
+          <img src="images/JSAbh.png" style="height:7rem" />
+          <img src="images/Drop ps.png" style="height:5rem" />
+        </h1>
+        <!-- PHE Department-->
+      </div>
+      <div class="fl_right center">
+        <ul class="meta nospace inline">
+          <li><a href="tel:18001807027"><span class="icon-phone"></span>1800 1807027</a></li>
+          <li>
+            <span class="icon-envelope-alt"></span>
+            <a href="mailto:kmrphed@yahoo.com">kmrphed@yahoo.com</a>
+          </li>
+        </ul>
+        <nav>
+          <ul class="nospace inline">
 
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4D6CD906" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAALl1G4WcS5Q62K8+gePu2WBlDNkF4yqjGS5XAiWDqUH4PynLf0u8O4EVSvmYqv+340daut4GsprSDwHBnogr+r5" />
-</div>
-        <style>
-         @media (max-width: 480px) { 
-            .imagess { 
-                 width: 291px;
-            } 
-        } 
-          
-        /* Media Query for low resolution  Tablets, Ipads */ 
-        @media (min-width: 481px) and (max-width: 767px) { 
-            .imagess { 
-                 width: 291px;
-            } 
-        } 
-    </style>
-            <div class="row">
-            <div class="col-md-1">
+            <li>
+              <span class="icon-twitter"></span>
+              <a href="#" target="_blank"></a>
+            </li>
+
+            <span class="icon-facebook"></span>
+            <li><a href="#"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <!-- LOGO END -->
+  <!-- ################################################################################################ -->
+  <!-- MAIN NAVIGATION -->
+  <div class="wrapper row2">
+    <nav role="navigation" id="topnav" class="clear">
+      <ul class="clear">
+        <li id="lnkHome"><a href="/index.html" title="Home">Home</a></li>
+        <li id="lnkAbout">
+          <a class="drop" href="aboutUs.html" title="About">About</a>
+          <ul class="sub-menu">
+            <li id="subLnkAboutUok">
+              <a href="/aboutUs.html" style="text-transform: none" title="About Us">Welcome Message</a>
+            </li>
+            <li id="Li1">
+              <a href="aboutUs.html#vis" style="text-transform: none" title="About Us">Vision and Mission</a>
+            </li>
+            <li id="Li2">
+              <a href="aboutUs.html#obj" style="text-transform: none" title="About Us">Our Objectives</a>
+            </li>
+          </ul>
+        </li>
+        <li id="lnkAllotments">
+          <a class="drop" href="allotments.html" title="Allotments">Allotments</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="/allotments.html" target="_blank" title="JJM">JJM</a>
+            </li>
+        </li>
+      </ul>
+      <li id="lnkProgrammes">
+        <a href="/programmes.html" title="Programmes">Programmes</a>
+      </li>
+      <li id="lnkWQ">
+        <a href="/waterQuality.html" title="Water Quality">Water Quality</a>
+      </li>
+      <li id="lnkOG" class="last-child">
+        <a href="/organizationalChart.html" title="Oragnizational Chart">Oragnizational Chart</a>
+      </li>
+      <li id="lnkContact">
+        <a href="/contact.html" title="Contact Us">Contact Us</a>
+      </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- MAIN NAVIGATION END -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- PAGEINTRO -->
+  <div class="wrapper row3">
+    <div id="pageintro" class="clear">
+      <div class="fl_left">
+        <h2 class="nospace">Organisational Chart</h2>
+      </div>
+      <nav class="fl_right breadcrumb">
+        <ul>
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="organizationalChart.html" title="organizationalChart">organizational Chart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- Start CONTENT -->
+  <div class="wrapper row4">
+    <section class="center">
+      <h1><u>Organizational chart Of Kashmir PHE Department Srinagar</u></h1>
+      <img src="images/organ chart.jpg" class="img-responsive" />
+    </section>
+
+    <!-- Table -->
+    <div class="table clear">
+      <h1 class="center">Our Sub-Division Falling Under The Jurisdiction Of Above Mentioned Executive Engineers
+      </h1>
+      <table id='customers'>
+        <thead class="center">
+          <tr style='font-size:large;'>
+            <th>Executive Engineer</th>
+            <th>Assistant Executive Engineer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Water Works Division Srinagar</td>
+            <td>
+              <ul>
+                <li>PHE City Sub-Division Srinagar</li>
+                <li>PHE Doodganga Sub-Division Srinagar</li>
+                <li>Project Sub-Division Srinagar</li>
+                <li>PHE NWR Sub-Division Srinagar</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Water Supply Master Plan Division Srinagar</td>
+            <td>
+              <ul>
+                <li>PHE Head Works Sub-Division Srinagar</li>
+                <li>PHE District Sub-Division Ist Srinagar</li>
+                <li>PHE Distribution Sub-Division IInd Srinagar</li>
+                <li>PHE Distribution Sub-Division IIInd Srinagar</li>
+                <li>PHE Chemical Sub-Division Srinagar</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Water Supply Master Plan Division Ganderbal</td>
+            <td>
+              <ul>
+                <li>PHE Sub-Division Srinagar</li>
+                <li>PHE Sub-Division Kangan</li>
+                <li>PHE Sub-Division Ganderbal</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Division Budgam</td>
+            <td>
+              <ul>
+                <li>PHE Sub-Division Budgam</li>
+                <li>PHE Sub-Division Beeru</li>
+                <li>PHE Sub-Division Khan Sahib</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Division Chadoora</td>
+            <td>
+              <ul>
+                <li>PHE Sub-Division Chadoora</li>
+                <li>PHE Sub-Division Chrari Sharief</li>
+                <li>PHE Sub-Division Lal Nagar</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Division Kulgam</td>
+            <td>
+              <ul>
+                <li>PHE Sub-Division Kulgam</li>
+                <li>PHE Sub-Division Damhal Hanjipora</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Division Qazigund</td>
+            <td>
+              <ul>
+                <li>PHE Sub-Division Qazigund</li>
+                <li>PHE Sub-Division Dooru</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Division Bijbehara</td>
+            <td>
+              <ul>
+                <li>PHE Sub-Division Bijbehara</li>
+                <li>PHE Sub-Division Anantnag</li>
+                <li>PHE Sub-Division Kokernag</li>
+                <li>PHE Sub-Division Pahalgam (H.Q: Aishmuqam)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Division Shopian</td>
+            <td>
+              <ul>
+                <li>PHE Sub-Division Shopian</li>
+                <li>PHE Sub-Division Pulwama</li>
+                <li>PHE Sub-Division Tahab</li>
+                <li>PHE Sub-Division Zainpora</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Division Awantipora</td>
+            <td>
+              <ul>
+                <li>PHE Sub-Division Awantipora</li>
+                <li>PHE Sub-Division Tral</li>
+                <li>PHE Sub-Division Pampore</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Division Pulwama</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>PHE Division Baramulla</td>
+            <td>
+              <ul>
+                <li>PHE Sub-Division Baramulla</li>
+                <li>PHE Sub-Division URI</li>
+                <li>PHE Sub-Division Watergam</li>
+                <li>PHE Sub-Division Pattan</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Division Bandipora</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>PHE Division Sopore</td>
+            <td>
+              <ul>
+                <li>PHE Sub-Division Sopore</li>
+                <li>PHE Sub-Division Watlab</li>
+                <li>PHE Sub-Division Mirgund</li>
+                <li>PHE Sub-Division Sumbal</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>F.B.I Division Tangmarg</td>
+            <td>
+              <ul>
+                <li>PHE Sub-Division Gulmarg (H.Q:Tangmarg) "Sub-Divison Transferred To Executive Engineer F.B.I
+                  Division Tangmarg vide Govt. order No:12-Hyd of 2004 dated 16-01-2004</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Special Sub-Division Tangdhar</td>
+            <td>
+              <ul>
+                <li>PHE Sub-Division Tangdhar</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Special Sub-Division Gurez</td>
+            <td>
+              <ul>
+                <li>PHE Special Sub-Division Gurez</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Division URI</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>PHE Division Kupwara</td>
+            <td>
+              <ul>
+                <li>PHE Sub-Division Kupwara</li>
+                <li>PHE Sub-Division Kralpora</li>
+                <li>PHE Sub-Division Sogam</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Special Sub-Division Handwara</td>
+            <td>
+              <ul>
+                <li>PHE Sub-Division Handwara</li>
+                <li>PHE Sub-Division Ramhal (H.Q:Wilgam)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Division Ground Water Division Srinagar</td>
+            <td>
+              <ul>
+                <li>PHE Drilling Sub-Division Ist Srinagar</li>
+                <li>PHE Drilling Sub-Division IInd Srinagar</li>
+                <li>PHE Stores/Transport Sub-Division Srinagar</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Mechanical Rural Division Srinagar</td>
+            <td>
+              <ul>
+                <li>PHE Mechanical Rural Division Srinagar</li>
+                <li>PHE Peripheral Sub-Division Srinagar</li>
+                <li>PHE Mechanical Sub-Division Budgam</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Mechanical Division North Sopore</td>
+            <td>
+              <ul>
+                <li>PHE Mechanical Sub-Division Handwara</li>
+                <li>PHE Mechanical Sub-Division Sopore</li>
+                <li>PHE Mechanical Sub-Division Baramulla</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Mechanical Division Srinagar</td>
+            <td>
+              <ul>
+                <li>PHE Mechanical Sub-Division Right Srinagar</li>
+                <li>PHE Mechanical Sub-Division Left Srinagar</li>
+                <li>PHE Mechanical Sub-Division (Construction) Srinagar</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE (M&P) Division Srinagar</td>
+            <td>
+              <ul>
+                <li>PHE Mechanical Procurement Sub-Division Ist Srinagar</li>
+                <li>PHE Mechanical Procurement Sub-Division IInd Srinagar</li>
+                <li>PHE Mechanical Procurement Sub-Division HMT Srinagar</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>PHE Mechanical Division (South) Awantipora</td>
+            <td>
+              <ul>
+                <li>PHE Mechanical Sub-Division Qazigund</li>
+                <li>PHE Mechanical Sub-Division Bijbehara</li>
+                <li>PHE Mechanical Sub-Division Pampore</li>
+                <li>PHE Mechanical Sub-Division Shopian</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- END CONTENT -->
+  <!-- ################################################################################################ -->
+
+  <!-- ################################################################################################ -->
+  <!-- PAGEINTRO END -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- Start CONTENT -->
+
+  <!-- End CONTENT -->
+
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+
+  <!-- Panel and Footer START-->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class=" wrapper row5">
+    <div class="hon-panel">
+      <!-- PANNEL START -->
+      <h2><span>Honourable Panel</span></h2>
+      <div class="panel">
+        <div class="card">
+          <div class="panel-img">
+            <img src="/images/ManojSinha.jpg" alt="i">
+          </div>
+          <div class="panel-name">
+            <strong>Shri Manoj Sinha</strong> <br>
+            (Lt. Governor)
+          </div>
+        </div>
+        <div class="card">
+          <div class="panel-img">
+            <img src="/images/cheifengineerervevikkohli.jpg" alt="i">
+          </div>
+          <div class="panel-name">
+            <strong>Shri Vivek Kohli</strong><br>
+            (Cheif Engineer)
+          </div>
+        </div>
+        <div class="card">
+          <div class="panel-img">
+            <img src="/images/Shaleen-Kabra-IAS-Indian-Bureaucracy.jpg" alt="i">
+          </div>
+          <div class="panel-name">
+            <strong>Shri Shaleen Kabra (IAS)</strong><br>
+            (Financial Commissioner )
+          </div>
+        </div>
+        <div class="card">
+          <div class="panel-img">
+            <img src="/images/shriatalaulloo.jpg" alt="i">
+          </div>
+          <div class="panel-name">
+            <strong>Shri Atal Dulloo (IAS)</strong><br>
+            (Cheif Secretary)
+            <br />
+            <!-- </div> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANNEL END -->
+    <!-- ################################################################################################ -->
+    <!-- FOOTER -->
+    <div class="wrapper row6">
+      <footer role="contentinfo" id="p-footer" class="clear center">
+        <!-- BLOCK 1 -->
+        <div class="col-1-4 first">
+          <a href="https://jkjalshakti.nic.in/rti.html " style="color: inherit" target="-blank">
+            <div class="block push30">
+              <span class="cc circle icon-book"></span>
             </div>
-            <div class="col-md-8">
-                <img src="images/jjm-kashmir-logo.png" class="imagess" />
-                 <img src="images/asokachakr.jpg" /><img src="images/jel.jpg" /><img src="images/phejam.jpg" />
-            </div>
-            <div class="col-md-1">
-               
-            </div>
-            <div class="col-md-3">
-                <br />
-               <i class="fa fa-phone"></i> &nbsp;<b>HelpLine No.18001807027</b>
-            </div>
-                <link href="css2/style.css" rel="stylesheet" />
-            <nav class="qbootstrap-nav" role="navigation">
-
-                <div class="container">
-                    <div class="row">
-
-                        <style>
-                            .menu-1 ul li a {
-                                color: #ffff;
-                            }
-                        </style>
-                        <div class="col-xs-12 text-center">
-                            <div class="menu-1" style="background: linear-gradient(221deg,#c62052 0,#280071 100%);">
-                                <ul>
-                                    <li class="active"><a href="index.html" style="color: #fff">Home</a></li>
-                                    <li class="has-dropdown">
-                                        <a href="About.html">About Us</a>
-                                        <ul class="dropdown">
-                                            <li><a href="About.html" title="About Us">About Us</a></li>
-                                            <li><a href="Welcome.html" title="Welcome Message">Welcome Message</a></li>
-                                            <li><a href="Aim.html" title="Our Aim">Our Aim</a></li>
-                                            <li><a href="Goal.html" title="Our Goal">Our Goal</a></li>
-                                            <li><a href="Objective.html" title="Our Objective">Our Objective</a></li>
-                                            <li><a href="Vission.html" title="Our Vission">Our Vission</a></li>
-
-                                        </ul>
-                                    </li>
-
-
-                                    <li><a href="organizationalchart.html">Organisational Chart</a></li>
-
-                                    <li class="has-dropdown">
-                                        <a href="#">RTI</a>
-
-                                        <ul class="dropdown">
-                                            <li><a href="all-rti.html" title="RTI-Acts">RTI-Acts</a></li>
-                                            <li><a href="RTINoteBook.html" title="RTI NoteBook">RTI NoteBook</a></li>
-                                        </ul>
-                                    </li>
-
-
-                                    <li><a href="Programmes.html">Programmmes</a></li>
-
-
-
-
-
-
-                                    <li><a href="Water-Quality.html">Water Quality</a></li>
-
-                                    <li><a href="Contact.html" title="Contact US">Contact Us</a></li>
-                                   
-
-                                    
-
-
-                                    <li><a href="Allotment.html" title="Allotments">Allotments</a></li>
-
-                                     <li><a href="Login/Default.html" title="Login"> <input type="submit" name="ctl00$btnlogin" value="Login" id="btnlogin" class="btn btn-primary" /></a></li>
-
-                                   
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </nav>
-
-
+            <h6 class="push20">RTI NOTEBOOK</h6>
+            <p class="nospace">RTI ACT and</p>
+            <p class="nospace">Guidelines ...</p>
+          </a>
+        </div>
+        <!-- BLOCK 2 -->
+        <div class="col-1-4">
+          <div class="block push30">
+            <span class="cc circle icon-phone"></span>
+          </div>
+          <h6 class="push20">Telephone Directory</h6>
+          <p class="nospace">
+            <a href="tel:+919906726713" style="color: inherit"> +91 9906726713</a><br>
+            <a href="tel:18001807027" style="color: inherit"> 18001807027</a>
+          </p>
 
         </div>
-
-
-        <div class="container" style="min-height: 395px; /*height: 100vh; */">
-            <div class="col-md-12">
-                <h2>
-                    
-    <span id="head_PageContent_Label1">Organizational chart Of Kashmir PHE Department Srinagar</span>
-
-                </h2>
-                
-
-<img src="images/new2.jpg"  class="img-responsive" />
-   
-    <h2>Sub-Division Falling Under The Jurisdiction Of Above Mentioned Executive Engineers.</h2>
-    <p>01: <b>Executive Engineer Water Works Divison Srinagar.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE City Sub-Division Srinagar.<br />
-        &nbsp (b) Assistant Executive Engineer PHE NWR Sub-Division Srinagar.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Doodganga Sub-Division Srinagar.<br />
-        &nbsp (d) Assistant Executive Engineer Project Sub-Division Srinagar.<br />
-      
-    </p>
-  
-    <p>02: <b>Executive Engineer Water Supply Master Plan Divison Srinagar.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Head Works Sub-Division Srinagar.<br />
-        &nbsp (b) Assistant Executive Engineer PHE District Sub-Division Ist Srinagar.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Distribution Sub-Division IInd Srinagar.<br />
-        &nbsp (d) Assistant Executive Engineer PHE Distribution Sub-Division IIInd Srinagar.<br />
-        &nbsp (e) Assistant Executive Engineer PHE Chemical Sub-Division Srinagar.<br />
-    </p>
-
-
-    <p>
-        03:<b>Executive Engineer Water Supply Master Plan Divison Ganderbal.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Sub-Division Srinagar.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Sub-Division Kangan.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Sub-Division Ganderbal.<br />
-    </p>
-    <p>
-        04:<b>Executive Engineer PHE Division Budgam.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Sub-Division Budgam.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Sub-Division Beeru.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Sub-Division Khan Sahib.<br />
-    </p>
-     <p>
-        05:<b>Executive Engineer PHE Division Chadoora.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Sub-Division Chadoora.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Sub-Division Chrari Sharief.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Sub-Division Lal Nagar.<br />
-    </p>
-     <p>
-        06:<b>Executive Engineer PHE Division Kulgam.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Sub-Division Kulgam.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Sub-Division Damhal Hanjipora.<br />
-      
-    </p>
-         <p>
-        07:<b>Executive Engineer PHE Division Qazigund.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Sub-Division Qazigund.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Sub-Division Dooru.<br />
-      
-    </p>
-        <p>
-        08:<b>Executive Engineer PHE Division Bijbehara.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Sub-Division Bijbehara.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Sub-Division Anantnag.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Sub-Division Kokernag.<br />
-        &nbsp (d) Assistant Executive Engineer PHE Sub-Division Pahalgam. (H.Q: Aishmuqam)<br />
-    </p>
-            <p>
-        09:<b>Executive Engineer PHE Division Shopian.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Sub-Division Shopian.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Sub-Division Pulwama.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Sub-Division Tahab.<br />
-        &nbsp (d) Assistant Executive Engineer PHE Sub-Division Zainpora.<br />
-    </p>
-                <p>
-        10:<b>Executive Engineer PHE Division Awantipora.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Sub-Division Awantipora.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Sub-Division Tral.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Sub-Division Pampore.<br />
-   
-    </p>
-      <p>
-        10:<b>Executive Engineer PHE Division Pulwama.</b><br /></p>
-                <p>
-        11:<b>Executive Engineer PHE Division Baramulla.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Sub-Division Baramulla.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Sub-Division URI.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Sub-Division Watergam.<br />
-        &nbsp (d) Assistant Executive Engineer PHE Sub-Division Pattan.<br />
-    </p>
-                    <p>
-        12:<b>Executive Engineer PHE Division Bandipora.</b><br />
-   
-    </p>
-                    <p>
-        13:<b>Executive Engineer PHE Division Sopore.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Sub-Division Sopore.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Sub-Division Watlab.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Sub-Division Mirgund.<br />
-        &nbsp (d) Assistant Executive Engineer PHE Sub-Division Sumbal.<br />
-    </p>
-     <p>
-        14:<b>Executive Engineer F.B.I Division Tangmarg.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Sub-Division Gulmarg (H.Q:Tangmarg) "Sub-Divison Transferred To Executive Engineer F.B.I Division Tangmarg vide Govt. order No:12-Hyd of 2004 dated 16-01-2004.<br />
-  
-    </p>
-     <p>
-        15:<b>Executive Engineer Special Sub-Division Tangdhar.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Sub-Division Tangdhar.<br />
-   
-    </p>
-        <p>
-        16:<b>Executive Engineer Special Sub-Division Gurez.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Special Sub-Division Gurez.<br />
-   
-    </p>
-            <p>
-        17:<b>Executive Engineer PHE Division URI.</b><br /></p>
-                        <p>
-        18:<b>Executive Engineer PHE Division Kupwara.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Sub-Division Kupwara.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Sub-Division Kralpora.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Sub-Division Sogam.<br />
-   </p>
-     <p>
-        19:<b>Executive Engineer Special Sub-Division Handwara.</b><br />
-          &nbsp (a) Assistant Executive Engineer PHE Sub-Division Handwara.<br />
-          &nbsp (b) Assistant Executive Engineer PHE Sub-Division Ramhal (H.Q:Wilgam)<br />
-    </p>
-        <p>20: <b>Executive Engineer PHE Divison Ground Water Division Srinagar.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Drilling Sub-Division Ist Srinagar.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Drilling Sub-Division IInd Srinagar.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Stores/Transport Sub-Division Srinagar.<br />
-      
-    </p>
-            <p>21: <b>Executive Engineer PHE Mechanical Rural Division Srinagar.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Mechanical Rural Division Srinagar.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Peripheral Sub-Division Srinagar.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Mechanical Sub-Division Budgam.<br />
-      
-    </p>
-              <p>22: <b>Executive Engineer PHE Mechanical Division North Sopore.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Mechanical Sub-Division Handwara.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Mechanical Sub-Division Sopore.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Mechanical Sub-Division Baramulla.<br />
-      
-    </p>
-
-       <p>23: <b>Executive Engineer PHE Mechanical Division Srinagar.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Mechanical Sub-Division Right Srinagar.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Mehanical Sub-Division Left Srinagar.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Mechanical Sub-Division (Construction) Srinagar.<br />
-      
-    </p>
-           <p>24: <b>Executive Engineer PHE (M&P) Division Srinagar.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Mechanical Procurement Sub-Division Ist Srinagar.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Mechanical Procurement Sub-Division IInd Srinagar.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Mechanical Procurement Sub-Division HMT Srinagar.<br />
-      
-    </p>
-               <p>25: <b>Executive Engineer PHE Mechanical Division (South) Awantipora.</b><br />
-        &nbsp (a) Assistant Executive Engineer PHE Mechanical Sub-Division Qazigund.<br />
-        &nbsp (b) Assistant Executive Engineer PHE Mechanical Sub-Division Bijbehara.<br />
-        &nbsp (c) Assistant Executive Engineer PHE Mechanical Sub-Division Pampore.<br />
-        &nbsp (d) Assistant Executive Engineer PHE Mechanical Sub-Division Shopian.<br />
-    </p>
-
-            </div>
+        <!-- BLOCK 3 -->
+        <div class="col-1-4">
+          <div class="block push30">
+            <span class="cc circle icon-envelope-alt"></span>
+          </div>
+          <h6 class="push20">Email</h6>
+          <p class="nospace">
+            <a href="mailto:cephe-kashmir@jk.gov.in" style="color: inherit">cephe-kashmir@jk.gov.in</a>
+            <a href="mailto:kmrphed@yahoo.com" style="color: inherit">kmrphed@yahoo.com</a>
+          </p>
         </div>
-        <div class="clearfix"></div>
-        <footer class="Hr">
-               <div class="col-md-12" style="background-image:url('images/footerimg.jpg');color:white;background-repeat: no-repeat; background-size: cover;padding:0px!important;">
-                <div class="col-md-4">
-                    <div class="dnntitle">
-                        <h3 class="titleline" style="color:white;"><span class="title1">Contact Us !</span></h3>
-                    </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d211427.26926799395!2d74.6666703!3d34.106639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e19af3651273df%3A0x27b18b788814bd2!2sPublic+Health+Engineering+Department%2C+Srinagar+190012!5e0!3m2!1sen!2sin!4v1517206824075" width="100%" height="200" frameborder="0" style="border: 0" allowfullscreen></iframe>
-                    <p>
-                        <p>
-                            JAL SHAKTI PHE KASHMIR<br />
-                            <h4 style="color:white;">(PUBLIC HEALTH ENGINEERING DEPARTMENT)</h4>
-                        </p>
-                        <span>UT OF JAMMU AND KASHMIR</span><br>
-                        District Srinagar,
-                 and Kashmir 190003.<br>
-                        Phone : 91-99000753.<br>
-                        Email: jkphekashmir@rediffmail.com
-                    </p>
-
-                </div>
-                <div class="col-md-4 sidebar" style="color:white;">
-                    <div class="dnntitle">
-                        <h3 class="titleline" style="color:white;"><span class="title1">Quick Links</span></h3>
-                    </div>
-                    <div class="row" style="color:white;">
-                        <div class="col-xs-6 col-sm-6" style="color:white;">
-                            <ul style="color:white;">
-                                <li><a href="AllTenders.html" title="Tenders" style="color:white;">Tenders</a></li>
-                                <li><a href="circulars-orders.html" title="Circulars" style="color:white;">Circulars</a></li>
-                                <li><a href="all-orders.html" title="Orders" style="color:white;">Orders</a></li>
-                                <li><a href="Default-2.html" title="Letter" style="color:white;">Letter</a></li>
-                                <li><a href="all-allotments.html" title="Allotments" style="color:white;">Allotments</a></li>
-                                <li><a href="Grievance.html" title="Grievance Cell" style="color:white;">Grievance Cell</a></li>
-                                <li><a href="http://kashmir.nic.in/" title="GAD" target="_blank" style="color:white;">GAD</a></li>
-                                <li><a href="http://jkpheirrigation.nic.in/" title="JKPHE/ I&FC.GOV.IN" target="_blank" style="color:white;">JKPHE/ I&FC.GOV.IN</a></li>
-                            </ul>
-
-                        </div>
-
-                        <div class="col-xs-6 col-sm-6">
-                            <ul style="color:white;">
-                                <li><a href="all-rti.html" title="RTI-Acts" style="color:white;">RTI-Acts</a></li>
-                                <li><a href="RTINoteBook.html" title="RTI NoteBook" style="color:white;">RTI NoteBook</a></li>
-                                <li><a href="Water-quality-2.html" title="Water Quality" style="color:white;">Water Quality</a></li>
-                                <li><a href="Aim.html" title="Our Aim" style="color:white;">Our Aim</a></li>
-                                <li><a href="Vission.html" title="Our Vission" style="color:white;">Our Vission</a></li>
-                                <li><a href="publicInformation.html" title="Public Info." style="color:white;">Public Info.</a></li>
-
-                                <li><a href="https://www.jktenders.gov.in/nicgep/app" title="JKTENDERS.GOV.IN" target="_blank" style="color:white;">JKTENDERS.GOV.IN</a></li>
-
-                            </ul>
-
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="col-md-4 no-padding">
-                    <div class="dnntitle">
-                        <h3 class="titleline" style="color:white;"><span class="title1">Our Gallery</span></h3>
-                    </div>
-                    <div id="ImpNewPhotoThumNail" class="col-xs-12" data-toggle="modal" data-target="#myModal">
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                            <img id="EvtHkmDlgUtv1" src="BGallery/1.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
-                        </div>
-                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                            <img id="EvtHkmDlgUtv2" src="BGallery/2.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
-                        </div>
-                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                            <img id="EvtHkmDlgUtv3" src="BGallery/3.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
-                        </div>
-                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                            <img id="EvtHkmDlgUtv4" src="BGallery/4.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
-                        </div>
-                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                            <img id="EvtHkmDlgUtv5" src="BGallery/5.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
-                        </div>
-                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                            <img id="EvtHkmDlgUtv6" src="BGallery/6.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
-                        </div>
-                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                            <img id="EvtHkmDlgUtv7" src="BGallery/7.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
-                        </div>
-                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                            <img id="EvtHkmDlgUtv8" src="BGallery/8.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
-                        </div>
-                        <div class="gal-item col-md-4 col-sm-4 col-xs-6">
-                            <img id="EvtHkmDlgUtv9" src="BGallery/9.jpg" class="img-responsive GaleryCssOuter EvtHkmDlgUtv">
-                        </div>
-                    </div>
-                    <div style="margin-top: 10px;">
-                        &nbsp;
-                    </div>
-                    <div style="margin-top: 30px; margin-left: 30px;">
-                        <a href="https://twitter.com/JalShaktiPHEkmr"><i class="fa fa-twitter-square" style="font-size: 40px;"></i></a>&nbsp;&nbsp;  <a href="https://www.facebook.com/people/Jal-Shakti-Phe-Kashmir/pfbid02ysVVXNshJo2zxcWQjZAABJUtVb5pnKckLPWim5buc4F4RCUSGWF3rMardwNdq5Nul/"><i class="fa fa-facebook-square" style="font-size: 40px;"></i></a>&nbsp;&nbsp;  <a href="#"><i class="fa fa-youtube-square" style="font-size: 40px;"></i></a>
-                    </div>
-                </div>
-
+        <!-- BLOCK 4 -->
+        <div class="col-1-4">
+          <a href="https://maps.app.goo.gl/QtQSNmJuCnPGA4uh9" style="color: inherit" target="-blank">
+            <div class="block push30">
+              <span class="cc circle icon-map-marker"></span>
             </div>
-        </footer>
-        
-    </form>
-</body>
-<script type="text/javascript">
 
+            <h6 class="push20">Address</h6>
+            <address>
+              Hazuri Bagh, Srinagar<br />
+              J&amp;K, India 190008
+            </address>
+          </a>
+
+          <!--<form method="post" action="#">
+        <input type="text" value="">
+        <input type="submit" value="Subscribe">
+      </form>-->
+        </div>
+      </footer>
+
+      <!-- COPYRIGHT -->
+      <div id="copyright" class="center">
+        Copyright©2024 Jal Shakti PHE Kashmir |
+        <a href="#" style="color: inherit">Developed and Maintained By Bitz 365</a>
+      </div>
+    </div>
+
+    <!-- END FOOTER -->
+    <!-- ################################################################################################ -->
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#top" id="scrolltotop" title="Back To Top"><span class="icon-arrow-up icon-2x"></span></a>
+    <!-- ################################################################################################ -->
+    <!-- Footer END -->
+    <!-- ################################################################################################ -->
+    <!-- JAVASCRIPTS -->
+    <!-- JS START -->
+    <!-- JAVASCRIPTS -->
+    <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+    <script src="js/jquery-latest.min.js"></script>
+    <!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script> -->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Media -->
+    <script src="js/jquery.fitvids.js"></script>
+    <!-- Custom Settings -->
+    <script src="js/custom.js"></script>
+
+    <!-- JS END -->
+    <!-- Slider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.flexslider-setup.js"></script>
+
+    <!-- <script>
     $(document).ready(function () {
-        $('#menu').slicknav();
-        var text = "";
-        var i;
-        for (i = 1; i < 10; i++) {
-            text += "<div class=\"gal-item col-md-4 col-sm-4 col-xs-6\">" +
-                "<img id=EvtHkmDlgUtv" + i + " src=\"BGallery/" + i + ".jpg\" class=\"img-responsive GaleryCssOuter EvtHkmDlgUtv\">" +
-                "</div>";
-        }
-        // console.log(text);
-        document.getElementById("ImpNewPhotoThumNail").innerHTML = text;
-        // imageListEventSPlain();
-        $('#ImpNewPhotoThumNail .EvtHkmDlgUtv').click(function () {
-            showNexPhoto("#" + this.id);
-
-            function showNexPhoto(idA) {
-                var showURLToDislay = $.trim($(idA).attr("FLD256"));
-                var showURL = $.trim($(idA).attr("FLD256"));
-                if (showURL.indexOf("http") < 0 && showURL.length > 5) {
-                    showURL = "http://" + showURL;
-                }
-                var fld788 = $.trim($(idA).attr("FLD788"));
-                var clasNMEE = $.trim($(idA).attr("FLD677"));
-                if (clasNMEE.length < 2 && fld788 == "1000") {
-                    clasNMEE = "globe";
-                }
-
-                var htmSpnAL = "<span class=\"direcRev sourceSpnThimb\">" +
-                    "<a>" +
-                    "<i class=\"fa fa-" + clasNMEE + "\"></i>" + showURLToDislay + "</a></span>";
-                $('#Div3UTUEIMGSlide').html("<div id=robackwardEvt class=\"RowEvtFrwdNewLft\"><span class=robackwards><i id=robackwardEvticon class=\"glyphicon glyphicon-chevron-left GalIconColorArrow\"></i></span></div>" +
-                    "<img class=img-responsive src=\"" + $(idA).attr("src") + "\" />" +
-                    "<div id=rofrewardEvt class=\"RowEvtFrwdNew\"><span class=rofrewards><i id=rofrewardEvticon class=\"iconClass glyphicon glyphicon-chevron-right GalIconColorArrow\"></i></span></div>");
-
-                $('#rofrewardEvt,#robackwardEvt').hide()
-                $('#Div3UTUEIMGSlide').mouseenter(function () {
-                    $('#rofrewardEvt,#robackwardEvt').show();
-                });
-                $('#Div3UTUEIMGSlide').mouseleave(function () {
-                    $('#rofrewardEvt,#robackwardEvt').hide();
-                });
-
-                var totl = $('#ImpNewPhotoThumNail .EvtHkmDlgUtv').length;
-                var courntIndex = idA.split('EvtHkmDlgUtv')[1];
-
-                $('#rofrewardEvt,#robackwardEvt').unbind('click');
-
-                $('#robackwardEvt').click(function () {
-                    courntIndex--;
-                    courntIndex = courntIndex > 0 ? courntIndex : totl;
-                    showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
-                });
-
-                $('#rofrewardEvt').click(function () {
-                    courntIndex++;
-                    courntIndex = courntIndex > totl ? 1 : courntIndex;
-                    showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
-                });
-
-                $(document).unbind('keyup');
-
-                $(document).keyup(function (event) {
-                    if (event.keyCode == 39 || event.keyCode == 40) {
-                        courntIndex++;
-                        courntIndex = courntIndex > totl ? 1 : courntIndex;
-                        showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
-                    }
-                    if (event.keyCode == 37 || event.keyCode == 38) {
-                        courntIndex--;
-                        courntIndex = courntIndex > 0 ? courntIndex : totl;
-                        showNexPhoto("#EvtHkmDlgUtv" + courntIndex);
-                    }
-                });
-
-            }
-        });
+      //  $("#lstEvents").niceScroll({ autohidemode: true, cursorcolor:layoutColor});
+      //            $(".accordion-content").niceScroll({ autohidemode: true, cursorcolor: layoutColor });
+      //            $(".alert-msg").niceScroll({ autohidemode: true, cursorcolor: layoutColor });
+      $("li.active").removeClass("active");
+      $("#lnkHome").addClass("active");
     });
-
-</script>
+  </script> -->
+    <script src="js/jwplayer.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      jwplayer("player").setup({
+        autostart: false,
+        image: "images/demo/video0.png",
+        flashplayer: "jwplayer/player.swf",
+        file: "video/Tarana.flv",
+        width: 250,
+        height: 200,
+      });
+    </script>
+  </div>
+</body>
 
 </html>
-
-
