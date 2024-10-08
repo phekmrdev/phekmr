@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-#caustics {
+/* #caustics {
   position: fixed;
   bottom: 0;
   top: 0;
@@ -17,4 +17,49 @@
   display: block;
   background-image: url(https://raw.githubusercontent.com/happy358/misc/main/image/caustics.png);
   opacity: 0.18;
+} */
+
+/* New code for transition */
+#caustics::before,
+#caustics::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  max-width: 1350px;
+  height: 100vh;
+  background-image: url(https://raw.githubusercontent.com/happy358/misc/main/image/caustics.png);
+  background-repeat: repeat;
+
+  --duration: 10s;
+  --height: 30vh;
+  --gapY: 0px;
+
+  background-size: calc(100vw / (var(--ratioW))) 40vh;
+  animation: caustics calc(var(--duration) * (var(--ratioW))) linear infinite;
+  opacity: 0.3;
+  mask-image: linear-gradient(
+    to top,
+    blue,
+    transparent var(--height),
+    transparent
+  );
+}
+
+#caustics::after {
+  --duration: 11s;
+  --gapY: 10vh;
+  animation-delay: -2s;
+  transform: scale3d(-1, 1, 1);
+}
+@keyframes caustics {
+  0% {
+    background-position: bottom var(--gapY) left;
+  }
+
+  100% {
+    background-position: bottom var(--gapY) left -100vw;
+  }
 }
